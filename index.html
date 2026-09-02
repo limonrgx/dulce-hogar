@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dulce Hogar | Pastelería familiar</title>
+  <meta name="description" content="Dulce Hogar es una pastelería familiar que elabora pasteles, cupcakes y postres artesanales para cumpleaños, celebraciones y ocasiones especiales.">
+  <meta name="author" content="Dulce Hogar">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <!-- ===================== ENCABEZADO ===================== -->
+  <header class="encabezado">
+    <div class="contenedor barra">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Logotipo de Dulce Hogar">
+        <span>Dulce Hogar<small>Pastelería familiar</small></span>
+      </a>
+
+      <button class="boton-menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">&#9776;</button>
+
+      <nav aria-label="Menú principal">
+        <ul class="menu" id="menu-principal">
+          <li><a class="activo" href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="pedidos.html">Pedidos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== PORTADA / BIENVENIDA ===================== -->
+    <section class="portada">
+      <div class="contenedor">
+        <div class="portada-texto">
+          <span class="etiqueta">Hecho en casa con amor</span>
+          <h1>Bienvenidos a Dulce Hogar</h1>
+          <p>Somos una pastelería familiar que endulza los momentos más especiales.
+             Cada pastel, cupcake y postre se prepara a mano, con ingredientes frescos
+             y las recetas que aprendimos en la cocina de la abuela.</p>
+          <p>
+            <a class="boton" href="productos.html">Ver nuestros productos</a>
+            <a class="boton secundario" href="pedidos.html">Hacer un pedido</a>
+          </p>
+        </div>
+      </div>
+      <img class="portada-imagen" src="img/hero.svg" alt="Ilustración de una mesa con un pastel de chocolate y dos cupcakes decorados">
+    </section>
+
+    <!-- ===================== PROMOCIONES ===================== -->
+    <section class="seccion" id="promociones">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <h2>Promociones del mes</h2>
+          <p>Ofertas especiales para que celebrar salga más dulce y más barato.</p>
+        </div>
+
+        <div class="rejilla">
+          <article class="tarjeta">
+            <div class="tarjeta-cuerpo">
+              <h3>Martes de cupcakes</h3>
+              <p>Llevá 6 cupcakes y te regalamos 2. Válido todos los martes en pedidos hechos con un día de anticipación.</p>
+              <span class="precio">6 + 2 gratis</span>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="tarjeta-cuerpo">
+              <h3>Combo cumpleaños</h3>
+              <p>Pastel de 20 personas + 12 cupcakes decorados + velas de regalo, listo para tu fiesta.</p>
+              <span class="precio">15% de descuento</span>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="tarjeta-cuerpo">
+              <h3>Postre sorpresa</h3>
+              <p>En pedidos mayores a $30 te incluimos un postre pequeño de cortesía elegido por nosotros.</p>
+              <span class="precio">Postre de regalo</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRODUCTOS DESTACADOS ===================== -->
+    <section class="seccion alterna" id="destacados">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <h2>Lo más pedido</h2>
+          <p>Estos son los favoritos de nuestros clientes desde que abrimos.</p>
+        </div>
+
+        <div class="rejilla">
+          <article class="tarjeta">
+            <img src="img/pastel-chocolate.svg" alt="Ilustración de un pastel de chocolate de dos pisos">
+            <div class="tarjeta-cuerpo">
+              <h3>Pastel de chocolate</h3>
+              <p>Bizcocho húmedo de cacao con relleno de ganache y cobertura de chocolate semiamargo.</p>
+              <span class="precio">Desde $18.00</span>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="img/cupcake-vainilla.svg" alt="Ilustración de un cupcake de vainilla con chispas de colores">
+            <div class="tarjeta-cuerpo">
+              <h3>Cupcakes de vainilla</h3>
+              <p>Suaves, esponjosos y decorados con buttercream y chispas de colores. Ideales para compartir.</p>
+              <span class="precio">$1.25 c/u</span>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="img/postre-cheesecake.svg" alt="Ilustración de una rebanada de cheesecake con fresa">
+            <div class="tarjeta-cuerpo">
+              <h3>Cheesecake de fresa</h3>
+              <p>Base de galleta, crema suave de queso y una cobertura de fresas naturales hecha el mismo día.</p>
+              <span class="precio">$2.50 la porción</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== POR QUÉ ELEGIRNOS ===================== -->
+    <section class="seccion">
+      <div class="contenedor dos-columnas">
+        <div>
+          <h2>¿Por qué elegir Dulce Hogar?</h2>
+          <p>Somos un negocio pequeño y familiar, así que cada pedido lo atendemos
+             nosotros mismos. Eso nos permite cuidar los detalles y adaptar cada
+             producto a lo que necesita tu celebración.</p>
+          <ul class="ventajas">
+            <li>Repostería artesanal, sin premezclas industriales.</li>
+            <li>Diseños personalizados según tu tema y colores.</li>
+            <li>Entrega puntual el día de tu evento.</li>
+            <li>Atención directa por WhatsApp, sin intermediarios.</li>
+          </ul>
+        </div>
+        <img src="img/cocina.svg" alt="Ilustración de una cocina con tazón, batidor, rodillo y harina">
+      </div>
+    </section>
+
+    <!-- ===================== LLAMADO A LA ACCIÓN ===================== -->
+    <section class="franja">
+      <div class="contenedor">
+        <h2>¿Tenés una celebración cerca?</h2>
+        <p>Escribinos y armamos juntos el pastel perfecto para tu ocasión especial.
+           Recibimos pedidos con tres días de anticipación.</p>
+        <p><a class="boton" href="pedidos.html">Quiero hacer mi pedido</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="pie">
+    <div class="contenedor pie-rejilla">
+      <div>
+        <h3>Dulce Hogar</h3>
+        <p>Pastelería familiar dedicada a endulzar cumpleaños, celebraciones
+           y ocasiones especiales desde el año 2015.</p>
+      </div>
+      <div>
+        <h3>Secciones</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="pedidos.html">Pedidos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li>Teléfono: 2222-3344</li>
+          <li>WhatsApp: 7777-8899</li>
+          <li>Correo: <a href="mailto:hola@dulcehogar.com">hola@dulcehogar.com</a></li>
+          <li>Horario: lunes a sábado, 9:00 a 18:00</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pie-final">&copy; 2026 Dulce Hogar &middot; Sitio web elaborado como proyecto escolar de Diseño Web con HTML5.</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
