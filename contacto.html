@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Dulce Hogar</title>
+  <meta name="description" content="Teléfono, WhatsApp, correo, redes sociales y ubicación de la pastelería familiar Dulce Hogar.">
+  <meta name="author" content="Dulce Hogar">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <!-- ===================== ENCABEZADO ===================== -->
+  <header class="encabezado">
+    <div class="contenedor barra">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Logotipo de Dulce Hogar">
+        <span>Dulce Hogar<small>Pastelería familiar</small></span>
+      </a>
+
+      <button class="boton-menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">&#9776;</button>
+
+      <nav aria-label="Menú principal">
+        <ul class="menu" id="menu-principal">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="pedidos.html">Pedidos</a></li>
+          <li><a class="activo" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== CABECERA DE LA PÁGINA ===================== -->
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <h1>Contacto</h1>
+        <p>Escribinos por el medio que prefieras: siempre hay alguien de la familia atendiendo.</p>
+      </div>
+    </section>
+
+    <!-- ===================== DATOS DE CONTACTO ===================== -->
+    <section class="seccion" id="datos">
+      <div class="contenedor dos-columnas">
+        <div>
+          <h2>Escribinos</h2>
+          <p>Estamos atentos a tus mensajes de lunes a sábado. Respondemos
+             normalmente el mismo día.</p>
+
+          <ul class="datos-contacto">
+            <li><strong>Teléfono</strong> 2222-3344</li>
+            <li><strong>WhatsApp</strong> <a href="https://wa.me/50377778899">7777-8899</a></li>
+            <li><strong>Correo electrónico</strong> <a href="mailto:hola@dulcehogar.com">hola@dulcehogar.com</a></li>
+            <li><strong>Horario de atención</strong> Lunes a sábado, de 9:00 a.m. a 6:00 p.m.</li>
+          </ul>
+
+          <h3>Redes sociales</h3>
+          <ul class="redes">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="https://wa.me/50377778899">WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <form class="formulario" data-demo action="#" method="post">
+          <div class="campo">
+            <label for="c-nombre">Nombre</label>
+            <input type="text" id="c-nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="campo">
+            <label for="c-correo">Correo electrónico</label>
+            <input type="email" id="c-correo" name="correo" placeholder="tucorreo@correo.com" required>
+          </div>
+          <div class="campo">
+            <label for="c-asunto">Asunto</label>
+            <select id="c-asunto" name="asunto">
+              <option>Consulta de precios</option>
+              <option>Cotización de evento</option>
+              <option>Sugerencia</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="c-mensaje">Mensaje</label>
+            <textarea id="c-mensaje" name="mensaje" placeholder="Escribí tu mensaje aquí" required></textarea>
+          </div>
+          <button class="boton" type="submit">Enviar mensaje</button>
+          <p class="mensaje-enviado" tabindex="-1" hidden><strong>¡Mensaje enviado!</strong> Gracias por escribirnos, te responderemos pronto.</p>
+          <p class="aviso-form">Este formulario es una demostración del proyecto escolar y no envía información real.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== UBICACIÓN ===================== -->
+    <section class="seccion alterna" id="ubicacion">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <h2>¿Dónde nos encontrás?</h2>
+          <p>Trabajamos desde nuestra casa taller y entregamos a domicilio dentro de la ciudad.</p>
+        </div>
+
+        <div class="rejilla-2 rejilla">
+          <article class="tarjeta">
+            <div class="tarjeta-cuerpo">
+              <h3>Dirección</h3>
+              <p>Colonia Las Flores, Avenida Central #25,<br>San Salvador, El Salvador.</p>
+              <p>Punto de referencia: frente a la cancha del parque central.</p>
+              <span class="precio">Entrega a domicilio desde $3.00</span>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="tarjeta-cuerpo">
+              <h3>Zonas de entrega</h3>
+              <ul class="ventajas">
+                <li>Centro de la ciudad: $3.00</li>
+                <li>Colonias cercanas: $4.00</li>
+                <li>Municipios vecinos: a convenir</li>
+                <li>Retiro en el taller: gratis</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="franja">
+      <div class="contenedor">
+        <h2>Estamos listos para tu próxima celebración</h2>
+        <p>Contanos qué necesitás y te ayudamos a elegir la mejor opción para tu evento.</p>
+        <p><a class="boton" href="pedidos.html">Hacer un pedido</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="pie">
+    <div class="contenedor pie-rejilla">
+      <div>
+        <h3>Dulce Hogar</h3>
+        <p>Pastelería familiar dedicada a endulzar cumpleaños, celebraciones
+           y ocasiones especiales desde el año 2015.</p>
+      </div>
+      <div>
+        <h3>Secciones</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="pedidos.html">Pedidos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li>Teléfono: 2222-3344</li>
+          <li>WhatsApp: 7777-8899</li>
+          <li>Correo: <a href="mailto:hola@dulcehogar.com">hola@dulcehogar.com</a></li>
+          <li>Horario: lunes a sábado, 9:00 a 18:00</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pie-final">&copy; 2026 Dulce Hogar &middot; Sitio web elaborado como proyecto escolar de Diseño Web con HTML5.</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

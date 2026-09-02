@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos | Dulce Hogar</title>
+  <meta name="description" content="Aprendé cómo hacer un pedido en Dulce Hogar, llená el formulario y conocé los métodos de pago disponibles.">
+  <meta name="author" content="Dulce Hogar">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <!-- ===================== ENCABEZADO ===================== -->
+  <header class="encabezado">
+    <div class="contenedor barra">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Logotipo de Dulce Hogar">
+        <span>Dulce Hogar<small>Pastelería familiar</small></span>
+      </a>
+
+      <button class="boton-menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">&#9776;</button>
+
+      <nav aria-label="Menú principal">
+        <ul class="menu" id="menu-principal">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a class="activo" href="pedidos.html">Pedidos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== CABECERA DE LA PÁGINA ===================== -->
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <h1>Pedidos</h1>
+        <p>Hacer tu pedido es muy fácil: elegí, escribinos, confirmá y recibí.</p>
+      </div>
+    </section>
+
+    <!-- ===================== CÓMO HACER UN PEDIDO ===================== -->
+    <section class="seccion" id="como-pedir">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <h2>¿Cómo hacer un pedido?</h2>
+          <p>Solo son cuatro pasos y en menos de un día te confirmamos todo.</p>
+        </div>
+
+        <ol class="pasos">
+          <li>
+            <h3>Elegí tu producto</h3>
+            <p>Revisá la sección de productos y decidí el tipo, el tamaño y el sabor
+               que necesitás para tu celebración.</p>
+          </li>
+          <li>
+            <h3>Escribinos</h3>
+            <p>Llená el formulario de esta página o mandanos un mensaje por WhatsApp
+               con la fecha en que lo necesitás.</p>
+          </li>
+          <li>
+            <h3>Confirmá con el anticipo</h3>
+            <p>Te enviamos el precio final. Con el 50&nbsp;% de anticipo tu pedido
+               queda apartado en la agenda.</p>
+          </li>
+          <li>
+            <h3>Recibí tu pedido</h3>
+            <p>Podés pasar a recogerlo o pedir entrega a domicilio dentro de la
+               ciudad el día y la hora acordada.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== FORMULARIO ===================== -->
+    <section class="seccion alterna" id="formulario">
+      <div class="contenedor dos-columnas">
+        <div>
+          <h2>Formulario de pedido</h2>
+          <p>Completá los datos y nos pondremos en contacto para confirmar el precio
+             y la disponibilidad de la fecha.</p>
+          <ul class="ventajas">
+            <li>Pedidos con 3 días de anticipación.</li>
+            <li>Pasteles de boda: 2 semanas de anticipación.</li>
+            <li>Entrega a domicilio desde $3.00 según la zona.</li>
+          </ul>
+        </div>
+
+        <form class="formulario" data-demo action="#" method="post">
+          <div class="campos-dobles">
+            <div class="campo">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej. María López" required>
+            </div>
+            <div class="campo">
+              <label for="telefono">Teléfono o WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="7777-8899" required>
+            </div>
+          </div>
+
+          <div class="campos-dobles">
+            <div class="campo">
+              <label for="producto">Producto</label>
+              <select id="producto" name="producto" required>
+                <option value="">Elegí una opción</option>
+                <option>Pastel de chocolate</option>
+                <option>Pastel de fresa</option>
+                <option>Pastel de vainilla</option>
+                <option>Pastel temático</option>
+                <option>Caja de cupcakes</option>
+                <option>Postres variados</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="fecha">Fecha de entrega</label>
+              <input type="date" id="fecha" name="fecha" required>
+            </div>
+          </div>
+
+          <div class="campos-dobles">
+            <div class="campo">
+              <label for="porciones">Número de porciones</label>
+              <input type="number" id="porciones" name="porciones" min="6" max="120" value="20" required>
+            </div>
+            <div class="campo">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" placeholder="maria@correo.com">
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Detalles del pedido</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Contanos el tema de la fiesta, los colores y el mensaje que llevará el pastel."></textarea>
+          </div>
+
+          <button class="boton" type="submit">Enviar pedido</button>
+          <p class="mensaje-enviado" tabindex="-1" hidden><strong>¡Gracias!</strong> Tu pedido fue enviado. Te escribiremos para confirmarlo.</p>
+          <p class="aviso-form">Este formulario es una demostración del proyecto escolar y no envía información real.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== MÉTODOS DE PAGO ===================== -->
+    <section class="seccion" id="pagos">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <h2>Métodos de pago</h2>
+          <p>Podés pagar de la forma que te resulte más cómoda.</p>
+        </div>
+
+        <div class="rejilla">
+          <article class="tarjeta">
+            <div class="tarjeta-cuerpo">
+              <h3>Efectivo</h3>
+              <p>Al momento de recoger el pedido o al recibirlo en tu casa.</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <div class="tarjeta-cuerpo">
+              <h3>Transferencia bancaria</h3>
+              <p>Te enviamos el número de cuenta al confirmar el pedido.</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <div class="tarjeta-cuerpo">
+              <h3>Pago móvil</h3>
+              <p>Aceptamos pagos por aplicaciones móviles enviando el comprobante.</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <div class="tarjeta-cuerpo">
+              <h3>Anticipo del 50 %</h3>
+              <p>Para apartar la fecha; el resto se cancela al entregar el pedido.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="pie">
+    <div class="contenedor pie-rejilla">
+      <div>
+        <h3>Dulce Hogar</h3>
+        <p>Pastelería familiar dedicada a endulzar cumpleaños, celebraciones
+           y ocasiones especiales desde el año 2015.</p>
+      </div>
+      <div>
+        <h3>Secciones</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="pedidos.html">Pedidos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li>Teléfono: 2222-3344</li>
+          <li>WhatsApp: 7777-8899</li>
+          <li>Correo: <a href="mailto:hola@dulcehogar.com">hola@dulcehogar.com</a></li>
+          <li>Horario: lunes a sábado, 9:00 a 18:00</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pie-final">&copy; 2026 Dulce Hogar &middot; Sitio web elaborado como proyecto escolar de Diseño Web con HTML5.</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

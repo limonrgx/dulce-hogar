@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos | Dulce Hogar</title>
+  <meta name="description" content="Catálogo de pasteles, cupcakes y postres de Dulce Hogar, con precios y tamaños disponibles.">
+  <meta name="author" content="Dulce Hogar">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <!-- ===================== ENCABEZADO ===================== -->
+  <header class="encabezado">
+    <div class="contenedor barra">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Logotipo de Dulce Hogar">
+        <span>Dulce Hogar<small>Pastelería familiar</small></span>
+      </a>
+
+      <button class="boton-menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">&#9776;</button>
+
+      <nav aria-label="Menú principal">
+        <ul class="menu" id="menu-principal">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a class="activo" href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="pedidos.html">Pedidos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== CABECERA DE LA PÁGINA ===================== -->
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <h1>Nuestros productos</h1>
+        <p>Pasteles, cupcakes y postres artesanales, preparados el mismo día de la entrega.</p>
+      </div>
+    </section>
+
+    <!-- ===================== PASTELES ===================== -->
+    <section class="seccion" id="pasteles">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <h2>Pasteles</h2>
+          <p>Los preparamos en tamaños de 10, 20 y 40 porciones. Todos se pueden
+             personalizar con el nombre, los colores y el tema que quieras.</p>
+        </div>
+        <div class="rejilla">
+          <article class="tarjeta">
+            <img src="img/pastel-chocolate.svg" alt="Pastel de chocolate de dos pisos con cereza">
+            <div class="tarjeta-cuerpo">
+              <h3>Pastel de chocolate</h3>
+              <p>Bizcocho húmedo de cacao, relleno de ganache y cobertura de chocolate semiamargo.</p>
+              <span class="precio">Desde $18.00</span>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="img/pastel-fresa.svg" alt="Pastel de fresa decorado con fresas naturales">
+            <div class="tarjeta-cuerpo">
+              <h3>Pastel de fresa</h3>
+              <p>Bizcocho de vainilla con crema de fresa natural y fresas frescas encima.</p>
+              <span class="precio">Desde $20.00</span>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="img/pastel-vainilla.svg" alt="Pastel de vainilla con velas de cumpleaños">
+            <div class="tarjeta-cuerpo">
+              <h3>Pastel de vainilla</h3>
+              <p>El clásico de los cumpleaños: bizcocho de vainilla, relleno de dulce de leche y buttercream.</p>
+              <span class="precio">Desde $16.00</span>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="img/pastel-cumple.svg" alt="Pastel temático decorado en color morado">
+            <div class="tarjeta-cuerpo">
+              <h3>Pastel temático</h3>
+              <p>Diseño personalizado según el tema de tu fiesta: colores, figuras y mensaje incluidos.</p>
+              <span class="precio">Desde $25.00</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CUPCAKES ===================== -->
+    <section class="seccion alterna" id="cupcakes">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <h2>Cupcakes</h2>
+          <p>Se venden por caja de 6 o 12 unidades, con la decoración que elijas.</p>
+        </div>
+        <div class="rejilla">
+          <article class="tarjeta">
+            <img src="img/cupcake-vainilla.svg" alt="Cupcake de vainilla con chispas de colores">
+            <div class="tarjeta-cuerpo">
+              <h3>Cupcake de vainilla</h3>
+              <p>Esponjoso, con buttercream de vainilla y chispas de colores. El favorito de los niños.</p>
+              <span class="precio">$1.25 c/u</span>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="img/cupcake-chocolate.svg" alt="Cupcake de chocolate con crema oscura">
+            <div class="tarjeta-cuerpo">
+              <h3>Cupcake de chocolate</h3>
+              <p>Doble chocolate: bizcocho de cacao con crema de chocolate y chispas encima.</p>
+              <span class="precio">$1.50 c/u</span>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="img/cupcake-fresa.svg" alt="Cupcake de fresa con crema rosada">
+            <div class="tarjeta-cuerpo">
+              <h3>Cupcake de fresa</h3>
+              <p>Bizcocho de vainilla con crema de fresa natural y decoración en tonos rosados.</p>
+              <span class="precio">$1.50 c/u</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== POSTRES ===================== -->
+    <section class="seccion" id="postres">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <h2>Postres</h2>
+          <p>Ideales para reuniones pequeñas, cafés de la tarde o para antojarse un rato.</p>
+        </div>
+        <div class="rejilla">
+          <article class="tarjeta">
+            <img src="img/postre-cheesecake.svg" alt="Rebanada de cheesecake con cobertura de fresa">
+            <div class="tarjeta-cuerpo">
+              <h3>Cheesecake de fresa</h3>
+              <p>Base de galleta, crema suave de queso y cobertura de fresas naturales hecha el mismo día.</p>
+              <span class="precio">$2.50 la porción</span>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="img/postre-brownie.svg" alt="Brownies de chocolate apilados">
+            <div class="tarjeta-cuerpo">
+              <h3>Brownies de chocolate</h3>
+              <p>Bien húmedos por dentro, con trocitos de nuez y chocolate derretido encima.</p>
+              <span class="precio">$1.00 c/u</span>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="img/postre-galletas.svg" alt="Galletas con chispas de chocolate">
+            <div class="tarjeta-cuerpo">
+              <h3>Galletas con chispas</h3>
+              <p>Crujientes por fuera y suaves por dentro. Se venden en bolsitas de 6 unidades.</p>
+              <span class="precio">$3.00 la bolsa</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TABLA DE TAMAÑOS ===================== -->
+    <section class="seccion alterna" id="tamanos">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <h2>Tamaños y precios de los pasteles</h2>
+          <p>Los precios varían según el relleno y la decoración que elijas.</p>
+        </div>
+        <div class="envoltorio-tabla">
+          <table class="tabla">
+            <caption>Tabla de referencia de tamaños</caption>
+            <thead>
+              <tr>
+                <th scope="col">Tamaño</th>
+                <th scope="col">Porciones</th>
+                <th scope="col">Precio desde</th>
+                <th scope="col">Recomendado para</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pequeño</td>
+                <td>10 personas</td>
+                <td>$16.00</td>
+                <td>Reuniones familiares</td>
+              </tr>
+              <tr>
+                <td>Mediano</td>
+                <td>20 personas</td>
+                <td>$28.00</td>
+                <td>Cumpleaños</td>
+              </tr>
+              <tr>
+                <td>Grande</td>
+                <td>40 personas</td>
+                <td>$45.00</td>
+                <td>Bodas y graduaciones</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="franja">
+      <div class="contenedor">
+        <h2>¿Ya elegiste tu favorito?</h2>
+        <p>Hacé tu pedido con tres días de anticipación y lo tendremos listo el día que lo necesitás.</p>
+        <p><a class="boton" href="pedidos.html">Ir a pedidos</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="pie">
+    <div class="contenedor pie-rejilla">
+      <div>
+        <h3>Dulce Hogar</h3>
+        <p>Pastelería familiar dedicada a endulzar cumpleaños, celebraciones
+           y ocasiones especiales desde el año 2015.</p>
+      </div>
+      <div>
+        <h3>Secciones</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="pedidos.html">Pedidos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li>Teléfono: 2222-3344</li>
+          <li>WhatsApp: 7777-8899</li>
+          <li>Correo: <a href="mailto:hola@dulcehogar.com">hola@dulcehogar.com</a></li>
+          <li>Horario: lunes a sábado, 9:00 a 18:00</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pie-final">&copy; 2026 Dulce Hogar &middot; Sitio web elaborado como proyecto escolar de Diseño Web con HTML5.</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
