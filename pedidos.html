@@ -6,11 +6,562 @@
   <title>Pedidos | Dulce Hogar</title>
   <meta name="description" content="Aprendé cómo hacer un pedido en Dulce Hogar, llená el formulario y conocé los métodos de pago disponibles.">
   <meta name="author" content="Dulce Hogar">
-  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMTgwIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgcm9sZT0iaW1nIj4KCjxjaXJjbGUgY3g9IjkwIiBjeT0iOTAiIHI9Ijg4IiBmaWxsPSIjQzIxODVCIi8+PGNpcmNsZSBjeD0iOTAiIGN5PSI5MCIgcj0iNzgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9IjAuNSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIzIDEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MCAxMTgpIHNjYWxlKDAuMzApIHRyYW5zbGF0ZSgtMTUwIC0zMDApIj48ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMzAwIiByeD0iODgiIHJ5PSIxMiIgZmlsbD0iIzZENEM0MSIgb3BhY2l0eT0iMC4xIi8+PGNsaXBQYXRoIGlkPSJjcFBhcGVsIj48cGF0aCBkPSJNNzggMTk2IEgyMjIgTDIwNiAyOTIgUTIwNCAzMDAgMTk2IDMwMCBIMTA0IFE5NiAzMDAgOTQgMjkyIFoiLz48L2NsaXBQYXRoPjxwYXRoIGQ9Ik03OCAxOTYgSDIyMiBMMjA2IDI5MiBRMjA0IDMwMCAxOTYgMzAwIEgxMDQgUTk2IDMwMCA5NCAyOTIgWiIgZmlsbD0iI0ZGRjNFMCIvPjxnIGNsaXAtcGF0aD0idXJsKCNjcFBhcGVsKSI+PHJlY3QgeD0iODAiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iOTgiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMTE2IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjEzNCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIxNTIiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMTcwIiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjE4OCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIyMDYiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMjI0IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjwvZz48cGF0aCBkPSJNNzggMTk2IEgyMjIgTDIwNiAyOTIgUTIwNCAzMDAgMTk2IDMwMCBIMTA0IFE5NiAzMDAgOTQgMjkyIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZENEM0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMiIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iNzQiIHk9IjE4NiIgd2lkdGg9IjE1MiIgaGVpZ2h0PSIxNiIgcng9IjgiIGZpbGw9IiNGRkYzRTAiLz48cmVjdCB4PSI3NCIgeT0iMTg2IiB3aWR0aD0iMTUyIiBoZWlnaHQ9IjE2IiByeD0iOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xOCIvPjxwYXRoIGQ9Ik04NCAxOTQgcS02IC0zNCAyNiAtNDQgcS00IC0zMiAzMiAtMzYgcTYgLTI2IDM0IC0yMCBxMzAgNiAyNiAzNCBxMjYgOCAyMCAzNCBxLTIgMjIgLTI2IDMyIFoiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBkPSJNOTYgMTkwIHEtMiAtMjYgMjQgLTM0IiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjQ1IiBzdHJva2Utd2lkdGg9IjciIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xMzIgMTIyIHExMCAtMTQgMzAgLTEwIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjQiIHN0cm9rZS13aWR0aD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTg0IDE5NCBxLTYgLTM0IDI2IC00NCBxLTQgLTMyIDMyIC0zNiBxNiAtMjYgMzQgLTIwIHEzMCA2IDI2IDM0IHEyNiA4IDIwIDM0IHEtMiAyMiAtMjYgMzIgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ0QzQxIiBzdHJva2Utb3BhY2l0eT0iMC4xNCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iOTgiIHk9IjE3My41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0ZGQjMwMCIgdHJhbnNmb3JtPSJyb3RhdGUoMCAxMDQgMTc2KSIvPjxyZWN0IHg9IjEyMiIgeT0iMTU3LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjQjJERkRCIiB0cmFuc2Zvcm09InJvdGF0ZSg0NyAxMjggMTYwKSIvPjxyZWN0IHg9IjE0NiIgeT0iMTc1LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRjhCQkQwIiB0cmFuc2Zvcm09InJvdGF0ZSg5NCAxNTIgMTc4KSIvPjxyZWN0IHg9IjE3MCIgeT0iMTUzLjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRkZCMzAwIiB0cmFuc2Zvcm09InJvdGF0ZSgxNDEgMTc2IDE1NikiLz48cmVjdCB4PSIxOTAiIHk9IjE2OS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0IyREZEQiIgdHJhbnNmb3JtPSJyb3RhdGUoOCAxOTYgMTcyKSIvPjxyZWN0IHg9IjEzNCIgeT0iMTI5LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRjhCQkQwIiB0cmFuc2Zvcm09InJvdGF0ZSg1NSAxNDAgMTMyKSIvPjxyZWN0IHg9IjE2MiIgeT0iMTE5LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRkZCMzAwIiB0cmFuc2Zvcm09InJvdGF0ZSgxMDIgMTY4IDEyMikiLz48cmVjdCB4PSIxMDgiIHk9IjE0NS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0IyREZEQiIgdHJhbnNmb3JtPSJyb3RhdGUoMTQ5IDExNCAxNDgpIi8+PHJlY3QgeD0iMTgwIiB5PSIxMzcuNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNGOEJCRDAiIHRyYW5zZm9ybT0icm90YXRlKDE2IDE4NiAxNDApIi8+PHBhdGggZD0iTTE1MCA2MiBxNiAtMTQgMTggLTE4IiBzdHJva2U9IiM3Q0IzNDIiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iNjgiIHI9IjE1IiBmaWxsPSIjRTUzOTM1Ii8+PGNpcmNsZSBjeD0iMTQ0IiBjeT0iNjMiIHI9IjUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNSIvPjwvZz4KPC9zdmc+Cg==" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+/* ============================================================
+   Dulce Hogar - Pastelería familiar
+   Hoja de estilos principal
+   ============================================================ */
+
+:root {
+  --rosa: #c2185b;
+  --rosa-medio: #e8608f;
+  --rosa-claro: #f8bbd0;
+  --rosa-palo: #fce4ec;
+  --crema: #fff8f0;
+  --crema-fuerte: #ffe9cf;
+  --cafe: #5d4037;
+  --texto: #4a3b36;
+  --texto-suave: #7c6a63;
+  --blanco: #fffdfa;
+  --verde: #7cb342;
+  --sombra: 0 10px 30px rgba(93, 64, 55, 0.10);
+  --sombra-fuerte: 0 18px 40px rgba(93, 64, 55, 0.18);
+  --radio: 20px;
+}
+
+/* ---------- Base ---------- */
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Nunito", "Segoe UI", Arial, sans-serif;
+  color: var(--texto);
+  background: var(--crema);
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  color: var(--rosa);
+  line-height: 1.2;
+  margin: 0 0 .5em;
+}
+
+h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); }
+h2 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); }
+h3 { font-size: 1.25rem; color: var(--cafe); }
+
+p { margin: 0 0 1em; }
+
+a { color: var(--rosa); }
+
+img { max-width: 100%; display: block; }
+
+.contenedor {
+  width: min(1140px, 92%);
+  margin-inline: auto;
+}
+
+/* ---------- Encabezado y navegación ---------- */
+.encabezado {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 253, 250, .95);
+  backdrop-filter: blur(6px);
+  border-bottom: 2px solid var(--rosa-palo);
+}
+
+.barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .7rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  text-decoration: none;
+  color: var(--rosa);
+}
+
+.logo img { width: 52px; height: 52px; }
+
+.logo span {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.logo small {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: .68rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+  font-weight: 700;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: .3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: block;
+  padding: .5rem .9rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: 700;
+  font-size: .95rem;
+  transition: background .2s, color .2s;
+}
+
+.menu a:hover { background: var(--rosa-palo); color: var(--rosa); }
+
+.menu a.activo { background: var(--rosa); color: #fff; }
+
+.boton-menu {
+  display: none;
+  background: var(--rosa-palo);
+  border: none;
+  border-radius: 12px;
+  padding: .55rem .8rem;
+  font-size: 1.4rem;
+  color: var(--rosa);
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* ---------- Botones ---------- */
+.boton {
+  display: inline-block;
+  background: var(--rosa);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  padding: .85rem 1.8rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+  box-shadow: 0 8px 18px rgba(194, 24, 91, .28);
+  transition: transform .2s, box-shadow .2s, background .2s;
+}
+
+.boton:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(194, 24, 91, .35); }
+
+.boton.secundario {
+  background: #fff;
+  color: var(--rosa);
+  border: 2px solid var(--rosa-claro);
+  box-shadow: none;
+}
+
+.boton.secundario:hover { background: var(--rosa-palo); }
+
+/* ---------- Portada ---------- */
+.portada {
+  position: relative;
+  background: linear-gradient(180deg, var(--crema) 0%, #fff1f5 100%);
+  padding: 3.2rem 0 0;
+  text-align: center;
+}
+
+.portada-texto {
+  max-width: 660px;
+  margin-inline: auto;
+  padding-bottom: 2.4rem;
+}
+
+.portada-imagen {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portada-texto p { font-size: 1.1rem; color: var(--texto-suave); }
+
+.etiqueta {
+  display: inline-block;
+  background: var(--rosa-palo);
+  color: var(--rosa);
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-size: .72rem;
+  padding: .4rem 1rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Cabecera interna de página ---------- */
+.cabecera-pagina {
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgMTIwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcm9sZT0iaW1nIj4KCjxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBmaWxsPSIjRkZGM0UwIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAgMzApIHNjYWxlKDAuOCkiIG9wYWNpdHk9IjAuMzUiPjxwYXRoIGQ9Ik0wIDYgQy0xNCAtOCAtMjIgLTE4IC0xMiAtMjYgQy01IC0zMSAwIC0yNSAwIC0yMSBDMCAtMjUgNSAtMzEgMTIgLTI2IEMyMiAtMTggMTQgLTggMCA2IFoiIGZpbGw9IiNGOEJCRDAiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTAgOTApIHNjYWxlKDAuOCkiIG9wYWNpdHk9IjAuMzUiPjxwYXRoIGQ9Ik0wIDYgQy0xNCAtOCAtMjIgLTE4IC0xMiAtMjYgQy01IC0zMSAwIC0yNSAwIC0yMSBDMCAtMjUgNSAtMzEgMTIgLTI2IEMyMiAtMTggMTQgLTggMCA2IFoiIGZpbGw9IiNGOEJCRDAiLz48L2c+PGNpcmNsZSBjeD0iOTAiIGN5PSIzMCIgcj0iNSIgZmlsbD0iI0Y4QkJEMCIgb3BhY2l0eT0iMC41Ii8+PGNpcmNsZSBjeD0iMzAiIGN5PSI5MCIgcj0iNSIgZmlsbD0iI0Y4QkJEMCIgb3BhY2l0eT0iMC41Ii8+Cjwvc3ZnPgo=") repeat, var(--crema-fuerte);
+  padding: 3rem 0 2.6rem;
+  text-align: center;
+  border-bottom: 2px solid var(--rosa-palo);
+}
+
+.cabecera-pagina p {
+  max-width: 640px;
+  margin-inline: auto;
+  color: var(--texto-suave);
+}
+
+/* ---------- Secciones ---------- */
+.seccion { padding: 3.5rem 0; }
+
+.seccion.alterna { background: var(--blanco); }
+
+.seccion-titulo { text-align: center; margin-bottom: 2.2rem; }
+
+.seccion-titulo p {
+  max-width: 620px;
+  margin-inline: auto;
+  color: var(--texto-suave);
+}
+
+/* ---------- Rejillas y tarjetas ---------- */
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+}
+
+.rejilla-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+.tarjeta {
+  background: var(--blanco);
+  border: 2px solid var(--rosa-palo);
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: transform .25s, box-shadow .25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta:hover { transform: translateY(-6px); box-shadow: var(--sombra-fuerte); }
+
+.tarjeta img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: var(--blanco);
+  border-bottom: 2px solid var(--rosa-palo);
+}
+
+.tarjeta-cuerpo { padding: 1.2rem 1.4rem 1.6rem; flex: 1; }
+
+.tarjeta-cuerpo p { color: var(--texto-suave); font-size: .97rem; }
+
+.precio {
+  display: inline-block;
+  background: var(--rosa-palo);
+  color: var(--rosa);
+  font-weight: 800;
+  padding: .3rem .9rem;
+  border-radius: 999px;
+  font-size: .92rem;
+}
+
+/* ---------- Bloque de texto + imagen ---------- */
+.dos-columnas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 2.6rem;
+  align-items: center;
+}
+
+.dos-columnas img { border-radius: var(--radio); box-shadow: var(--sombra); }
+
+/* ---------- Lista de ventajas ---------- */
+.ventajas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: .8rem;
+}
+
+.ventajas li {
+  background: var(--rosa-palo);
+  border-radius: 14px;
+  padding: .8rem 1.1rem;
+  font-weight: 600;
+}
+
+/* ---------- Pasos numerados ---------- */
+.pasos {
+  list-style: none;
+  counter-reset: paso;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.4rem;
+}
+
+.pasos li {
+  counter-increment: paso;
+  background: var(--blanco);
+  border: 2px solid var(--rosa-palo);
+  border-radius: var(--radio);
+  padding: 2.6rem 1.4rem 1.4rem;
+  position: relative;
+  box-shadow: var(--sombra);
+}
+
+.pasos li::before {
+  content: counter(paso);
+  position: absolute;
+  top: -22px;
+  left: 1.2rem;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  background: var(--rosa);
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 1.2rem;
+  box-shadow: 0 6px 14px rgba(194, 24, 91, .3);
+}
+
+.pasos h3 { margin-bottom: .3rem; }
+
+/* ---------- Galería ---------- */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.2rem;
+}
+
+.galeria figure {
+  margin: 0;
+  background: var(--blanco);
+  border: 2px solid var(--rosa-palo);
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: transform .25s;
+}
+
+.galeria figure:hover { transform: scale(1.03) rotate(-1deg); }
+
+.galeria img {
+  height: 190px;
+  object-fit: contain;
+  width: 100%;
+  background: var(--blanco);
+  border-bottom: 2px solid var(--rosa-palo);
+}
+
+.galeria figcaption {
+  padding: .7rem 1rem 1rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--cafe);
+  font-size: .95rem;
+}
+
+/* ---------- Formularios ---------- */
+.formulario {
+  background: var(--blanco);
+  border: 2px solid var(--rosa-palo);
+  border-radius: var(--radio);
+  padding: 1.8rem;
+  box-shadow: var(--sombra);
+  display: grid;
+  gap: 1rem;
+}
+
+.campo { display: grid; gap: .35rem; }
+
+.campo label { font-weight: 800; font-size: .93rem; color: var(--cafe); }
+
+.campo input,
+.campo select,
+.campo textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: .75rem .9rem;
+  border: 2px solid var(--rosa-palo);
+  border-radius: 12px;
+  background: var(--crema);
+  color: var(--texto);
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: 3px solid var(--rosa-claro);
+  border-color: var(--rosa-medio);
+}
+
+.campo textarea { min-height: 120px; resize: vertical; }
+
+.campos-dobles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.aviso-form {
+  font-size: .85rem;
+  color: var(--texto-suave);
+  margin: 0;
+}
+
+/* ---------- Datos de contacto ---------- */
+.datos-contacto { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+
+.datos-contacto li {
+  background: var(--blanco);
+  border: 2px solid var(--rosa-palo);
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+}
+
+.datos-contacto strong { display: block; color: var(--rosa); }
+
+.redes { display: flex; flex-wrap: wrap; gap: .7rem; padding: 0; margin: 0; list-style: none; }
+
+.redes a {
+  display: inline-block;
+  background: var(--rosa-palo);
+  color: var(--rosa);
+  text-decoration: none;
+  font-weight: 800;
+  padding: .6rem 1.2rem;
+  border-radius: 999px;
+  transition: background .2s, color .2s;
+}
+
+.redes a:hover { background: var(--rosa); color: #fff; }
+
+/* ---------- Franja destacada ---------- */
+.franja {
+  background: var(--rosa);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 0;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgMTIwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcm9sZT0iaW1nIj4KCjxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBmaWxsPSIjRkZGM0UwIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAgMzApIHNjYWxlKDAuOCkiIG9wYWNpdHk9IjAuMzUiPjxwYXRoIGQ9Ik0wIDYgQy0xNCAtOCAtMjIgLTE4IC0xMiAtMjYgQy01IC0zMSAwIC0yNSAwIC0yMSBDMCAtMjUgNSAtMzEgMTIgLTI2IEMyMiAtMTggMTQgLTggMCA2IFoiIGZpbGw9IiNGOEJCRDAiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTAgOTApIHNjYWxlKDAuOCkiIG9wYWNpdHk9IjAuMzUiPjxwYXRoIGQ9Ik0wIDYgQy0xNCAtOCAtMjIgLTE4IC0xMiAtMjYgQy01IC0zMSAwIC0yNSAwIC0yMSBDMCAtMjUgNSAtMzEgMTIgLTI2IEMyMiAtMTggMTQgLTggMCA2IFoiIGZpbGw9IiNGOEJCRDAiLz48L2c+PGNpcmNsZSBjeD0iOTAiIGN5PSIzMCIgcj0iNSIgZmlsbD0iI0Y4QkJEMCIgb3BhY2l0eT0iMC41Ii8+PGNpcmNsZSBjeD0iMzAiIGN5PSI5MCIgcj0iNSIgZmlsbD0iI0Y4QkJEMCIgb3BhY2l0eT0iMC41Ii8+Cjwvc3ZnPgo=");
+  background-blend-mode: soft-light;
+}
+
+.franja h2 { color: #fff; }
+
+.franja p { max-width: 620px; margin-inline: auto; opacity: .95; }
+
+.franja .boton { background: #fff; color: var(--rosa); }
+
+/* ---------- Tabla ---------- */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--blanco);
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+}
+
+.tabla caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 800;
+  color: var(--texto-suave);
+  padding-bottom: .6rem;
+}
+
+.tabla th, .tabla td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid var(--rosa-palo); }
+
+.tabla thead th { background: var(--rosa); color: #fff; }
+
+.tabla tbody tr:nth-child(even) { background: var(--rosa-palo); }
+
+.envoltorio-tabla { overflow-x: auto; }
+
+/* ---------- Pie de página ---------- */
+.pie {
+  background: var(--cafe);
+  color: #f3e5df;
+  padding: 2.8rem 0 1.4rem;
+  margin-top: 2rem;
+}
+
+.pie h3 { color: var(--rosa-claro); font-family: "Nunito", sans-serif; font-size: 1.05rem; }
+
+.pie a { color: var(--rosa-claro); text-decoration: none; }
+
+.pie a:hover { text-decoration: underline; }
+
+.pie-rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.pie ul { list-style: none; padding: 0; margin: 0; }
+
+.pie li { margin-bottom: .4rem; }
+
+.pie-final {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, .18);
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  font-size: .85rem;
+  opacity: .8;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 860px) {
+  .boton-menu { display: block; }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--blanco);
+    padding: .8rem;
+    gap: .2rem;
+    border-bottom: 2px solid var(--rosa-palo);
+    box-shadow: var(--sombra);
+  }
+
+  .menu.abierto { display: flex; }
+
+  .encabezado { position: relative; }
+
+  .portada { padding: 2.2rem 0 0; }
+
+  .tarjeta img { height: 190px; }
+}
+
+  </style>
 </head>
 
 <body>
@@ -18,7 +569,7 @@
   <header class="encabezado">
     <div class="contenedor barra">
       <a class="logo" href="index.html">
-        <img src="img/logo.svg" alt="Logotipo de Dulce Hogar">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMTgwIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgcm9sZT0iaW1nIj4KCjxjaXJjbGUgY3g9IjkwIiBjeT0iOTAiIHI9Ijg4IiBmaWxsPSIjQzIxODVCIi8+PGNpcmNsZSBjeD0iOTAiIGN5PSI5MCIgcj0iNzgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9IjAuNSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIzIDEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MCAxMTgpIHNjYWxlKDAuMzApIHRyYW5zbGF0ZSgtMTUwIC0zMDApIj48ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMzAwIiByeD0iODgiIHJ5PSIxMiIgZmlsbD0iIzZENEM0MSIgb3BhY2l0eT0iMC4xIi8+PGNsaXBQYXRoIGlkPSJjcFBhcGVsIj48cGF0aCBkPSJNNzggMTk2IEgyMjIgTDIwNiAyOTIgUTIwNCAzMDAgMTk2IDMwMCBIMTA0IFE5NiAzMDAgOTQgMjkyIFoiLz48L2NsaXBQYXRoPjxwYXRoIGQ9Ik03OCAxOTYgSDIyMiBMMjA2IDI5MiBRMjA0IDMwMCAxOTYgMzAwIEgxMDQgUTk2IDMwMCA5NCAyOTIgWiIgZmlsbD0iI0ZGRjNFMCIvPjxnIGNsaXAtcGF0aD0idXJsKCNjcFBhcGVsKSI+PHJlY3QgeD0iODAiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iOTgiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMTE2IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjEzNCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIxNTIiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMTcwIiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjE4OCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIyMDYiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMjI0IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjwvZz48cGF0aCBkPSJNNzggMTk2IEgyMjIgTDIwNiAyOTIgUTIwNCAzMDAgMTk2IDMwMCBIMTA0IFE5NiAzMDAgOTQgMjkyIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZENEM0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMiIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iNzQiIHk9IjE4NiIgd2lkdGg9IjE1MiIgaGVpZ2h0PSIxNiIgcng9IjgiIGZpbGw9IiNGRkYzRTAiLz48cmVjdCB4PSI3NCIgeT0iMTg2IiB3aWR0aD0iMTUyIiBoZWlnaHQ9IjE2IiByeD0iOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xOCIvPjxwYXRoIGQ9Ik04NCAxOTQgcS02IC0zNCAyNiAtNDQgcS00IC0zMiAzMiAtMzYgcTYgLTI2IDM0IC0yMCBxMzAgNiAyNiAzNCBxMjYgOCAyMCAzNCBxLTIgMjIgLTI2IDMyIFoiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBkPSJNOTYgMTkwIHEtMiAtMjYgMjQgLTM0IiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjQ1IiBzdHJva2Utd2lkdGg9IjciIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xMzIgMTIyIHExMCAtMTQgMzAgLTEwIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjQiIHN0cm9rZS13aWR0aD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTg0IDE5NCBxLTYgLTM0IDI2IC00NCBxLTQgLTMyIDMyIC0zNiBxNiAtMjYgMzQgLTIwIHEzMCA2IDI2IDM0IHEyNiA4IDIwIDM0IHEtMiAyMiAtMjYgMzIgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ0QzQxIiBzdHJva2Utb3BhY2l0eT0iMC4xNCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iOTgiIHk9IjE3My41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0ZGQjMwMCIgdHJhbnNmb3JtPSJyb3RhdGUoMCAxMDQgMTc2KSIvPjxyZWN0IHg9IjEyMiIgeT0iMTU3LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjQjJERkRCIiB0cmFuc2Zvcm09InJvdGF0ZSg0NyAxMjggMTYwKSIvPjxyZWN0IHg9IjE0NiIgeT0iMTc1LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRjhCQkQwIiB0cmFuc2Zvcm09InJvdGF0ZSg5NCAxNTIgMTc4KSIvPjxyZWN0IHg9IjE3MCIgeT0iMTUzLjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRkZCMzAwIiB0cmFuc2Zvcm09InJvdGF0ZSgxNDEgMTc2IDE1NikiLz48cmVjdCB4PSIxOTAiIHk9IjE2OS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0IyREZEQiIgdHJhbnNmb3JtPSJyb3RhdGUoOCAxOTYgMTcyKSIvPjxyZWN0IHg9IjEzNCIgeT0iMTI5LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRjhCQkQwIiB0cmFuc2Zvcm09InJvdGF0ZSg1NSAxNDAgMTMyKSIvPjxyZWN0IHg9IjE2MiIgeT0iMTE5LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRkZCMzAwIiB0cmFuc2Zvcm09InJvdGF0ZSgxMDIgMTY4IDEyMikiLz48cmVjdCB4PSIxMDgiIHk9IjE0NS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0IyREZEQiIgdHJhbnNmb3JtPSJyb3RhdGUoMTQ5IDExNCAxNDgpIi8+PHJlY3QgeD0iMTgwIiB5PSIxMzcuNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNGOEJCRDAiIHRyYW5zZm9ybT0icm90YXRlKDE2IDE4NiAxNDApIi8+PHBhdGggZD0iTTE1MCA2MiBxNiAtMTQgMTggLTE4IiBzdHJva2U9IiM3Q0IzNDIiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iNjgiIHI9IjE1IiBmaWxsPSIjRTUzOTM1Ii8+PGNpcmNsZSBjeD0iMTQ0IiBjeT0iNjMiIHI9IjUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNSIvPjwvZz4KPC9zdmc+Cg==" alt="Logotipo de Dulce Hogar">
         <span>Dulce Hogar<small>Pastelería familiar</small></span>
       </a>
 
@@ -218,6 +769,34 @@
     <p class="pie-final">&copy; 2026 Dulce Hogar &middot; Sitio web elaborado como proyecto escolar de Diseño Web con HTML5.</p>
   </footer>
 
-  <script src="js/menu.js"></script>
+  <script>
+/* Menú responsivo: abre y cierra la navegación en pantallas pequeñas */
+document.addEventListener("DOMContentLoaded", function () {
+  var boton = document.querySelector(".boton-menu");
+  var menu = document.getElementById("menu-principal");
+
+  if (boton && menu) {
+    boton.addEventListener("click", function () {
+      var abierto = menu.classList.toggle("abierto");
+      boton.setAttribute("aria-expanded", abierto ? "true" : "false");
+    });
+  }
+
+  /* Mensaje de confirmación en los formularios (demostración escolar) */
+  var formularios = document.querySelectorAll("form[data-demo]");
+  formularios.forEach(function (form) {
+    form.addEventListener("submit", function (evento) {
+      evento.preventDefault();
+      var aviso = form.querySelector(".mensaje-enviado");
+      if (aviso) {
+        aviso.hidden = false;
+        aviso.focus();
+      }
+      form.reset();
+    });
+  });
+});
+
+  </script>
 </body>
 </html>

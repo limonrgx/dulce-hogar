@@ -6,11 +6,562 @@
   <title>Dulce Hogar | Pastelería familiar</title>
   <meta name="description" content="Dulce Hogar es una pastelería familiar que elabora pasteles, cupcakes y postres artesanales para cumpleaños, celebraciones y ocasiones especiales.">
   <meta name="author" content="Dulce Hogar">
-  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMTgwIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgcm9sZT0iaW1nIj4KCjxjaXJjbGUgY3g9IjkwIiBjeT0iOTAiIHI9Ijg4IiBmaWxsPSIjQzIxODVCIi8+PGNpcmNsZSBjeD0iOTAiIGN5PSI5MCIgcj0iNzgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9IjAuNSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIzIDEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MCAxMTgpIHNjYWxlKDAuMzApIHRyYW5zbGF0ZSgtMTUwIC0zMDApIj48ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMzAwIiByeD0iODgiIHJ5PSIxMiIgZmlsbD0iIzZENEM0MSIgb3BhY2l0eT0iMC4xIi8+PGNsaXBQYXRoIGlkPSJjcFBhcGVsIj48cGF0aCBkPSJNNzggMTk2IEgyMjIgTDIwNiAyOTIgUTIwNCAzMDAgMTk2IDMwMCBIMTA0IFE5NiAzMDAgOTQgMjkyIFoiLz48L2NsaXBQYXRoPjxwYXRoIGQ9Ik03OCAxOTYgSDIyMiBMMjA2IDI5MiBRMjA0IDMwMCAxOTYgMzAwIEgxMDQgUTk2IDMwMCA5NCAyOTIgWiIgZmlsbD0iI0ZGRjNFMCIvPjxnIGNsaXAtcGF0aD0idXJsKCNjcFBhcGVsKSI+PHJlY3QgeD0iODAiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iOTgiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMTE2IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjEzNCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIxNTIiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMTcwIiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjE4OCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIyMDYiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMjI0IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjwvZz48cGF0aCBkPSJNNzggMTk2IEgyMjIgTDIwNiAyOTIgUTIwNCAzMDAgMTk2IDMwMCBIMTA0IFE5NiAzMDAgOTQgMjkyIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZENEM0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMiIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iNzQiIHk9IjE4NiIgd2lkdGg9IjE1MiIgaGVpZ2h0PSIxNiIgcng9IjgiIGZpbGw9IiNGRkYzRTAiLz48cmVjdCB4PSI3NCIgeT0iMTg2IiB3aWR0aD0iMTUyIiBoZWlnaHQ9IjE2IiByeD0iOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xOCIvPjxwYXRoIGQ9Ik04NCAxOTQgcS02IC0zNCAyNiAtNDQgcS00IC0zMiAzMiAtMzYgcTYgLTI2IDM0IC0yMCBxMzAgNiAyNiAzNCBxMjYgOCAyMCAzNCBxLTIgMjIgLTI2IDMyIFoiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBkPSJNOTYgMTkwIHEtMiAtMjYgMjQgLTM0IiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjQ1IiBzdHJva2Utd2lkdGg9IjciIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xMzIgMTIyIHExMCAtMTQgMzAgLTEwIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjQiIHN0cm9rZS13aWR0aD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTg0IDE5NCBxLTYgLTM0IDI2IC00NCBxLTQgLTMyIDMyIC0zNiBxNiAtMjYgMzQgLTIwIHEzMCA2IDI2IDM0IHEyNiA4IDIwIDM0IHEtMiAyMiAtMjYgMzIgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ0QzQxIiBzdHJva2Utb3BhY2l0eT0iMC4xNCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iOTgiIHk9IjE3My41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0ZGQjMwMCIgdHJhbnNmb3JtPSJyb3RhdGUoMCAxMDQgMTc2KSIvPjxyZWN0IHg9IjEyMiIgeT0iMTU3LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjQjJERkRCIiB0cmFuc2Zvcm09InJvdGF0ZSg0NyAxMjggMTYwKSIvPjxyZWN0IHg9IjE0NiIgeT0iMTc1LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRjhCQkQwIiB0cmFuc2Zvcm09InJvdGF0ZSg5NCAxNTIgMTc4KSIvPjxyZWN0IHg9IjE3MCIgeT0iMTUzLjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRkZCMzAwIiB0cmFuc2Zvcm09InJvdGF0ZSgxNDEgMTc2IDE1NikiLz48cmVjdCB4PSIxOTAiIHk9IjE2OS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0IyREZEQiIgdHJhbnNmb3JtPSJyb3RhdGUoOCAxOTYgMTcyKSIvPjxyZWN0IHg9IjEzNCIgeT0iMTI5LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRjhCQkQwIiB0cmFuc2Zvcm09InJvdGF0ZSg1NSAxNDAgMTMyKSIvPjxyZWN0IHg9IjE2MiIgeT0iMTE5LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRkZCMzAwIiB0cmFuc2Zvcm09InJvdGF0ZSgxMDIgMTY4IDEyMikiLz48cmVjdCB4PSIxMDgiIHk9IjE0NS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0IyREZEQiIgdHJhbnNmb3JtPSJyb3RhdGUoMTQ5IDExNCAxNDgpIi8+PHJlY3QgeD0iMTgwIiB5PSIxMzcuNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNGOEJCRDAiIHRyYW5zZm9ybT0icm90YXRlKDE2IDE4NiAxNDApIi8+PHBhdGggZD0iTTE1MCA2MiBxNiAtMTQgMTggLTE4IiBzdHJva2U9IiM3Q0IzNDIiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iNjgiIHI9IjE1IiBmaWxsPSIjRTUzOTM1Ii8+PGNpcmNsZSBjeD0iMTQ0IiBjeT0iNjMiIHI9IjUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNSIvPjwvZz4KPC9zdmc+Cg==" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+/* ============================================================
+   Dulce Hogar - Pastelería familiar
+   Hoja de estilos principal
+   ============================================================ */
+
+:root {
+  --rosa: #c2185b;
+  --rosa-medio: #e8608f;
+  --rosa-claro: #f8bbd0;
+  --rosa-palo: #fce4ec;
+  --crema: #fff8f0;
+  --crema-fuerte: #ffe9cf;
+  --cafe: #5d4037;
+  --texto: #4a3b36;
+  --texto-suave: #7c6a63;
+  --blanco: #fffdfa;
+  --verde: #7cb342;
+  --sombra: 0 10px 30px rgba(93, 64, 55, 0.10);
+  --sombra-fuerte: 0 18px 40px rgba(93, 64, 55, 0.18);
+  --radio: 20px;
+}
+
+/* ---------- Base ---------- */
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Nunito", "Segoe UI", Arial, sans-serif;
+  color: var(--texto);
+  background: var(--crema);
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  color: var(--rosa);
+  line-height: 1.2;
+  margin: 0 0 .5em;
+}
+
+h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); }
+h2 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); }
+h3 { font-size: 1.25rem; color: var(--cafe); }
+
+p { margin: 0 0 1em; }
+
+a { color: var(--rosa); }
+
+img { max-width: 100%; display: block; }
+
+.contenedor {
+  width: min(1140px, 92%);
+  margin-inline: auto;
+}
+
+/* ---------- Encabezado y navegación ---------- */
+.encabezado {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 253, 250, .95);
+  backdrop-filter: blur(6px);
+  border-bottom: 2px solid var(--rosa-palo);
+}
+
+.barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .7rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  text-decoration: none;
+  color: var(--rosa);
+}
+
+.logo img { width: 52px; height: 52px; }
+
+.logo span {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.logo small {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: .68rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+  font-weight: 700;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: .3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: block;
+  padding: .5rem .9rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: 700;
+  font-size: .95rem;
+  transition: background .2s, color .2s;
+}
+
+.menu a:hover { background: var(--rosa-palo); color: var(--rosa); }
+
+.menu a.activo { background: var(--rosa); color: #fff; }
+
+.boton-menu {
+  display: none;
+  background: var(--rosa-palo);
+  border: none;
+  border-radius: 12px;
+  padding: .55rem .8rem;
+  font-size: 1.4rem;
+  color: var(--rosa);
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* ---------- Botones ---------- */
+.boton {
+  display: inline-block;
+  background: var(--rosa);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  padding: .85rem 1.8rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+  box-shadow: 0 8px 18px rgba(194, 24, 91, .28);
+  transition: transform .2s, box-shadow .2s, background .2s;
+}
+
+.boton:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(194, 24, 91, .35); }
+
+.boton.secundario {
+  background: #fff;
+  color: var(--rosa);
+  border: 2px solid var(--rosa-claro);
+  box-shadow: none;
+}
+
+.boton.secundario:hover { background: var(--rosa-palo); }
+
+/* ---------- Portada ---------- */
+.portada {
+  position: relative;
+  background: linear-gradient(180deg, var(--crema) 0%, #fff1f5 100%);
+  padding: 3.2rem 0 0;
+  text-align: center;
+}
+
+.portada-texto {
+  max-width: 660px;
+  margin-inline: auto;
+  padding-bottom: 2.4rem;
+}
+
+.portada-imagen {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portada-texto p { font-size: 1.1rem; color: var(--texto-suave); }
+
+.etiqueta {
+  display: inline-block;
+  background: var(--rosa-palo);
+  color: var(--rosa);
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-size: .72rem;
+  padding: .4rem 1rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Cabecera interna de página ---------- */
+.cabecera-pagina {
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgMTIwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcm9sZT0iaW1nIj4KCjxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBmaWxsPSIjRkZGM0UwIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAgMzApIHNjYWxlKDAuOCkiIG9wYWNpdHk9IjAuMzUiPjxwYXRoIGQ9Ik0wIDYgQy0xNCAtOCAtMjIgLTE4IC0xMiAtMjYgQy01IC0zMSAwIC0yNSAwIC0yMSBDMCAtMjUgNSAtMzEgMTIgLTI2IEMyMiAtMTggMTQgLTggMCA2IFoiIGZpbGw9IiNGOEJCRDAiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTAgOTApIHNjYWxlKDAuOCkiIG9wYWNpdHk9IjAuMzUiPjxwYXRoIGQ9Ik0wIDYgQy0xNCAtOCAtMjIgLTE4IC0xMiAtMjYgQy01IC0zMSAwIC0yNSAwIC0yMSBDMCAtMjUgNSAtMzEgMTIgLTI2IEMyMiAtMTggMTQgLTggMCA2IFoiIGZpbGw9IiNGOEJCRDAiLz48L2c+PGNpcmNsZSBjeD0iOTAiIGN5PSIzMCIgcj0iNSIgZmlsbD0iI0Y4QkJEMCIgb3BhY2l0eT0iMC41Ii8+PGNpcmNsZSBjeD0iMzAiIGN5PSI5MCIgcj0iNSIgZmlsbD0iI0Y4QkJEMCIgb3BhY2l0eT0iMC41Ii8+Cjwvc3ZnPgo=") repeat, var(--crema-fuerte);
+  padding: 3rem 0 2.6rem;
+  text-align: center;
+  border-bottom: 2px solid var(--rosa-palo);
+}
+
+.cabecera-pagina p {
+  max-width: 640px;
+  margin-inline: auto;
+  color: var(--texto-suave);
+}
+
+/* ---------- Secciones ---------- */
+.seccion { padding: 3.5rem 0; }
+
+.seccion.alterna { background: var(--blanco); }
+
+.seccion-titulo { text-align: center; margin-bottom: 2.2rem; }
+
+.seccion-titulo p {
+  max-width: 620px;
+  margin-inline: auto;
+  color: var(--texto-suave);
+}
+
+/* ---------- Rejillas y tarjetas ---------- */
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+}
+
+.rejilla-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+.tarjeta {
+  background: var(--blanco);
+  border: 2px solid var(--rosa-palo);
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: transform .25s, box-shadow .25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta:hover { transform: translateY(-6px); box-shadow: var(--sombra-fuerte); }
+
+.tarjeta img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: var(--blanco);
+  border-bottom: 2px solid var(--rosa-palo);
+}
+
+.tarjeta-cuerpo { padding: 1.2rem 1.4rem 1.6rem; flex: 1; }
+
+.tarjeta-cuerpo p { color: var(--texto-suave); font-size: .97rem; }
+
+.precio {
+  display: inline-block;
+  background: var(--rosa-palo);
+  color: var(--rosa);
+  font-weight: 800;
+  padding: .3rem .9rem;
+  border-radius: 999px;
+  font-size: .92rem;
+}
+
+/* ---------- Bloque de texto + imagen ---------- */
+.dos-columnas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 2.6rem;
+  align-items: center;
+}
+
+.dos-columnas img { border-radius: var(--radio); box-shadow: var(--sombra); }
+
+/* ---------- Lista de ventajas ---------- */
+.ventajas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: .8rem;
+}
+
+.ventajas li {
+  background: var(--rosa-palo);
+  border-radius: 14px;
+  padding: .8rem 1.1rem;
+  font-weight: 600;
+}
+
+/* ---------- Pasos numerados ---------- */
+.pasos {
+  list-style: none;
+  counter-reset: paso;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.4rem;
+}
+
+.pasos li {
+  counter-increment: paso;
+  background: var(--blanco);
+  border: 2px solid var(--rosa-palo);
+  border-radius: var(--radio);
+  padding: 2.6rem 1.4rem 1.4rem;
+  position: relative;
+  box-shadow: var(--sombra);
+}
+
+.pasos li::before {
+  content: counter(paso);
+  position: absolute;
+  top: -22px;
+  left: 1.2rem;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  background: var(--rosa);
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 1.2rem;
+  box-shadow: 0 6px 14px rgba(194, 24, 91, .3);
+}
+
+.pasos h3 { margin-bottom: .3rem; }
+
+/* ---------- Galería ---------- */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.2rem;
+}
+
+.galeria figure {
+  margin: 0;
+  background: var(--blanco);
+  border: 2px solid var(--rosa-palo);
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: transform .25s;
+}
+
+.galeria figure:hover { transform: scale(1.03) rotate(-1deg); }
+
+.galeria img {
+  height: 190px;
+  object-fit: contain;
+  width: 100%;
+  background: var(--blanco);
+  border-bottom: 2px solid var(--rosa-palo);
+}
+
+.galeria figcaption {
+  padding: .7rem 1rem 1rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--cafe);
+  font-size: .95rem;
+}
+
+/* ---------- Formularios ---------- */
+.formulario {
+  background: var(--blanco);
+  border: 2px solid var(--rosa-palo);
+  border-radius: var(--radio);
+  padding: 1.8rem;
+  box-shadow: var(--sombra);
+  display: grid;
+  gap: 1rem;
+}
+
+.campo { display: grid; gap: .35rem; }
+
+.campo label { font-weight: 800; font-size: .93rem; color: var(--cafe); }
+
+.campo input,
+.campo select,
+.campo textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: .75rem .9rem;
+  border: 2px solid var(--rosa-palo);
+  border-radius: 12px;
+  background: var(--crema);
+  color: var(--texto);
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: 3px solid var(--rosa-claro);
+  border-color: var(--rosa-medio);
+}
+
+.campo textarea { min-height: 120px; resize: vertical; }
+
+.campos-dobles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.aviso-form {
+  font-size: .85rem;
+  color: var(--texto-suave);
+  margin: 0;
+}
+
+/* ---------- Datos de contacto ---------- */
+.datos-contacto { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+
+.datos-contacto li {
+  background: var(--blanco);
+  border: 2px solid var(--rosa-palo);
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+}
+
+.datos-contacto strong { display: block; color: var(--rosa); }
+
+.redes { display: flex; flex-wrap: wrap; gap: .7rem; padding: 0; margin: 0; list-style: none; }
+
+.redes a {
+  display: inline-block;
+  background: var(--rosa-palo);
+  color: var(--rosa);
+  text-decoration: none;
+  font-weight: 800;
+  padding: .6rem 1.2rem;
+  border-radius: 999px;
+  transition: background .2s, color .2s;
+}
+
+.redes a:hover { background: var(--rosa); color: #fff; }
+
+/* ---------- Franja destacada ---------- */
+.franja {
+  background: var(--rosa);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 0;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgMTIwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcm9sZT0iaW1nIj4KCjxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBmaWxsPSIjRkZGM0UwIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAgMzApIHNjYWxlKDAuOCkiIG9wYWNpdHk9IjAuMzUiPjxwYXRoIGQ9Ik0wIDYgQy0xNCAtOCAtMjIgLTE4IC0xMiAtMjYgQy01IC0zMSAwIC0yNSAwIC0yMSBDMCAtMjUgNSAtMzEgMTIgLTI2IEMyMiAtMTggMTQgLTggMCA2IFoiIGZpbGw9IiNGOEJCRDAiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTAgOTApIHNjYWxlKDAuOCkiIG9wYWNpdHk9IjAuMzUiPjxwYXRoIGQ9Ik0wIDYgQy0xNCAtOCAtMjIgLTE4IC0xMiAtMjYgQy01IC0zMSAwIC0yNSAwIC0yMSBDMCAtMjUgNSAtMzEgMTIgLTI2IEMyMiAtMTggMTQgLTggMCA2IFoiIGZpbGw9IiNGOEJCRDAiLz48L2c+PGNpcmNsZSBjeD0iOTAiIGN5PSIzMCIgcj0iNSIgZmlsbD0iI0Y4QkJEMCIgb3BhY2l0eT0iMC41Ii8+PGNpcmNsZSBjeD0iMzAiIGN5PSI5MCIgcj0iNSIgZmlsbD0iI0Y4QkJEMCIgb3BhY2l0eT0iMC41Ii8+Cjwvc3ZnPgo=");
+  background-blend-mode: soft-light;
+}
+
+.franja h2 { color: #fff; }
+
+.franja p { max-width: 620px; margin-inline: auto; opacity: .95; }
+
+.franja .boton { background: #fff; color: var(--rosa); }
+
+/* ---------- Tabla ---------- */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--blanco);
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+}
+
+.tabla caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 800;
+  color: var(--texto-suave);
+  padding-bottom: .6rem;
+}
+
+.tabla th, .tabla td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid var(--rosa-palo); }
+
+.tabla thead th { background: var(--rosa); color: #fff; }
+
+.tabla tbody tr:nth-child(even) { background: var(--rosa-palo); }
+
+.envoltorio-tabla { overflow-x: auto; }
+
+/* ---------- Pie de página ---------- */
+.pie {
+  background: var(--cafe);
+  color: #f3e5df;
+  padding: 2.8rem 0 1.4rem;
+  margin-top: 2rem;
+}
+
+.pie h3 { color: var(--rosa-claro); font-family: "Nunito", sans-serif; font-size: 1.05rem; }
+
+.pie a { color: var(--rosa-claro); text-decoration: none; }
+
+.pie a:hover { text-decoration: underline; }
+
+.pie-rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.pie ul { list-style: none; padding: 0; margin: 0; }
+
+.pie li { margin-bottom: .4rem; }
+
+.pie-final {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, .18);
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  font-size: .85rem;
+  opacity: .8;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 860px) {
+  .boton-menu { display: block; }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--blanco);
+    padding: .8rem;
+    gap: .2rem;
+    border-bottom: 2px solid var(--rosa-palo);
+    box-shadow: var(--sombra);
+  }
+
+  .menu.abierto { display: flex; }
+
+  .encabezado { position: relative; }
+
+  .portada { padding: 2.2rem 0 0; }
+
+  .tarjeta img { height: 190px; }
+}
+
+  </style>
 </head>
 
 <body>
@@ -18,7 +569,7 @@
   <header class="encabezado">
     <div class="contenedor barra">
       <a class="logo" href="index.html">
-        <img src="img/logo.svg" alt="Logotipo de Dulce Hogar">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMTgwIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgcm9sZT0iaW1nIj4KCjxjaXJjbGUgY3g9IjkwIiBjeT0iOTAiIHI9Ijg4IiBmaWxsPSIjQzIxODVCIi8+PGNpcmNsZSBjeD0iOTAiIGN5PSI5MCIgcj0iNzgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9IjAuNSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIzIDEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MCAxMTgpIHNjYWxlKDAuMzApIHRyYW5zbGF0ZSgtMTUwIC0zMDApIj48ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMzAwIiByeD0iODgiIHJ5PSIxMiIgZmlsbD0iIzZENEM0MSIgb3BhY2l0eT0iMC4xIi8+PGNsaXBQYXRoIGlkPSJjcFBhcGVsIj48cGF0aCBkPSJNNzggMTk2IEgyMjIgTDIwNiAyOTIgUTIwNCAzMDAgMTk2IDMwMCBIMTA0IFE5NiAzMDAgOTQgMjkyIFoiLz48L2NsaXBQYXRoPjxwYXRoIGQ9Ik03OCAxOTYgSDIyMiBMMjA2IDI5MiBRMjA0IDMwMCAxOTYgMzAwIEgxMDQgUTk2IDMwMCA5NCAyOTIgWiIgZmlsbD0iI0ZGRjNFMCIvPjxnIGNsaXAtcGF0aD0idXJsKCNjcFBhcGVsKSI+PHJlY3QgeD0iODAiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iOTgiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMTE2IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjEzNCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIxNTIiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMTcwIiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjE4OCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIyMDYiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMjI0IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjwvZz48cGF0aCBkPSJNNzggMTk2IEgyMjIgTDIwNiAyOTIgUTIwNCAzMDAgMTk2IDMwMCBIMTA0IFE5NiAzMDAgOTQgMjkyIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZENEM0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMiIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iNzQiIHk9IjE4NiIgd2lkdGg9IjE1MiIgaGVpZ2h0PSIxNiIgcng9IjgiIGZpbGw9IiNGRkYzRTAiLz48cmVjdCB4PSI3NCIgeT0iMTg2IiB3aWR0aD0iMTUyIiBoZWlnaHQ9IjE2IiByeD0iOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xOCIvPjxwYXRoIGQ9Ik04NCAxOTQgcS02IC0zNCAyNiAtNDQgcS00IC0zMiAzMiAtMzYgcTYgLTI2IDM0IC0yMCBxMzAgNiAyNiAzNCBxMjYgOCAyMCAzNCBxLTIgMjIgLTI2IDMyIFoiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBkPSJNOTYgMTkwIHEtMiAtMjYgMjQgLTM0IiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjQ1IiBzdHJva2Utd2lkdGg9IjciIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xMzIgMTIyIHExMCAtMTQgMzAgLTEwIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjQiIHN0cm9rZS13aWR0aD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTg0IDE5NCBxLTYgLTM0IDI2IC00NCBxLTQgLTMyIDMyIC0zNiBxNiAtMjYgMzQgLTIwIHEzMCA2IDI2IDM0IHEyNiA4IDIwIDM0IHEtMiAyMiAtMjYgMzIgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ0QzQxIiBzdHJva2Utb3BhY2l0eT0iMC4xNCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iOTgiIHk9IjE3My41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0ZGQjMwMCIgdHJhbnNmb3JtPSJyb3RhdGUoMCAxMDQgMTc2KSIvPjxyZWN0IHg9IjEyMiIgeT0iMTU3LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjQjJERkRCIiB0cmFuc2Zvcm09InJvdGF0ZSg0NyAxMjggMTYwKSIvPjxyZWN0IHg9IjE0NiIgeT0iMTc1LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRjhCQkQwIiB0cmFuc2Zvcm09InJvdGF0ZSg5NCAxNTIgMTc4KSIvPjxyZWN0IHg9IjE3MCIgeT0iMTUzLjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRkZCMzAwIiB0cmFuc2Zvcm09InJvdGF0ZSgxNDEgMTc2IDE1NikiLz48cmVjdCB4PSIxOTAiIHk9IjE2OS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0IyREZEQiIgdHJhbnNmb3JtPSJyb3RhdGUoOCAxOTYgMTcyKSIvPjxyZWN0IHg9IjEzNCIgeT0iMTI5LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRjhCQkQwIiB0cmFuc2Zvcm09InJvdGF0ZSg1NSAxNDAgMTMyKSIvPjxyZWN0IHg9IjE2MiIgeT0iMTE5LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRkZCMzAwIiB0cmFuc2Zvcm09InJvdGF0ZSgxMDIgMTY4IDEyMikiLz48cmVjdCB4PSIxMDgiIHk9IjE0NS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0IyREZEQiIgdHJhbnNmb3JtPSJyb3RhdGUoMTQ5IDExNCAxNDgpIi8+PHJlY3QgeD0iMTgwIiB5PSIxMzcuNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNGOEJCRDAiIHRyYW5zZm9ybT0icm90YXRlKDE2IDE4NiAxNDApIi8+PHBhdGggZD0iTTE1MCA2MiBxNiAtMTQgMTggLTE4IiBzdHJva2U9IiM3Q0IzNDIiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iNjgiIHI9IjE1IiBmaWxsPSIjRTUzOTM1Ii8+PGNpcmNsZSBjeD0iMTQ0IiBjeT0iNjMiIHI9IjUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNSIvPjwvZz4KPC9zdmc+Cg==" alt="Logotipo de Dulce Hogar">
         <span>Dulce Hogar<small>Pastelería familiar</small></span>
       </a>
 
@@ -53,7 +604,7 @@
           </p>
         </div>
       </div>
-      <img class="portada-imagen" src="img/hero.svg" alt="Ilustración de una mesa con un pastel de chocolate y dos cupcakes decorados">
+      <img class="portada-imagen" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDUyMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iNTIwIiByb2xlPSJpbWciPgoKPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJjaWVsbyIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkYxRjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNGQ0U0RUMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI1MjAiIGZpbGw9InVybCgjY2llbG8pIi8+PGNpcmNsZSBjeD0iNTQzIiBjeT0iMjE4IiByPSI4LjUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNDYiLz48Y2lyY2xlIGN4PSI2MDkiIGN5PSIyMjkiIHI9IjQuMSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC40OCIvPjxjaXJjbGUgY3g9Ijc1NiIgY3k9IjMwOSIgcj0iMy42IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjM5Ii8+PGNpcmNsZSBjeD0iMTA5IiBjeT0iMzE2IiByPSI3LjIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMjciLz48Y2lyY2xlIGN4PSIxMTc5IiBjeT0iMzc2IiByPSI2LjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNTMiLz48Y2lyY2xlIGN4PSIxODkiIGN5PSI2IiByPSI2LjIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMjgiLz48Y2lyY2xlIGN4PSIyMjgiIGN5PSI5NCIgcj0iMy4yIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjQ2Ii8+PGNpcmNsZSBjeD0iNTI5IiBjeT0iMzI5IiByPSI2LjEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNTQiLz48Y2lyY2xlIGN4PSI2MDAiIGN5PSIyNTgiIHI9IjUuNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4zOCIvPjxjaXJjbGUgY3g9IjExOTciIGN5PSIzODgiIHI9IjguMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC41NyIvPjxjaXJjbGUgY3g9IjM3OCIgY3k9IjkwIiByPSI0LjciIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMjgiLz48Y2lyY2xlIGN4PSI5MjAiIGN5PSIxNTYiIHI9IjguMSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC40MiIvPjxjaXJjbGUgY3g9IjExNTAiIGN5PSIzMzAiIHI9IjMuMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4zNCIvPjxjaXJjbGUgY3g9IjEwOTIiIGN5PSIxODMiIHI9IjguOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC40MyIvPjxjaXJjbGUgY3g9Ijg4IiBjeT0iMjQ1IiByPSI3LjciIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMzciLz48Y2lyY2xlIGN4PSIxMDUiIGN5PSIxMzAiIHI9IjguOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC41OSIvPjxjaXJjbGUgY3g9IjE0MiIgY3k9Ijk2IiByPSIzLjYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMjgiLz48Y2lyY2xlIGN4PSI5NTYiIGN5PSI2OSIgcj0iNi40IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjQ1Ii8+PGNpcmNsZSBjeD0iMjI5IiBjeT0iMjg1IiByPSIzLjgiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNTQiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxNjQiIHI9IjQuMyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4zNyIvPjxjaXJjbGUgY3g9IjExNjUiIGN5PSIzMTMiIHI9IjQuOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC42NSIvPjxjaXJjbGUgY3g9IjI1MyIgY3k9IjE1NCIgcj0iOC4xIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjU0Ii8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iMzg2IiByPSI0LjMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMzciLz48Y2lyY2xlIGN4PSI5MjciIGN5PSIxMjgiIHI9IjQuOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4yOCIvPjxjaXJjbGUgY3g9IjEwOCIgY3k9IjIyNyIgcj0iNC41IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjUyIi8+PGNpcmNsZSBjeD0iNDQ2IiBjeT0iMTc3IiByPSI4LjgiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNDciLz48Y2lyY2xlIGN4PSI2ODkiIGN5PSIzMzgiIHI9IjQuMSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4zMiIvPjxjaXJjbGUgY3g9IjEwOTAiIGN5PSIzMTkiIHI9IjQuNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4zNCIvPjxjaXJjbGUgY3g9Ijg4NyIgY3k9IjM2NyIgcj0iNC4yIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjY4Ii8+PGNpcmNsZSBjeD0iMTA1OSIgY3k9IjIzNSIgcj0iNS41IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjMwIi8+PGNpcmNsZSBjeD0iNDYiIGN5PSIzNzUiIHI9IjQuNCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC41NyIvPjxjaXJjbGUgY3g9IjMwOCIgY3k9IjMyMSIgcj0iNi42IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjM4Ii8+PGNpcmNsZSBjeD0iMjExIiBjeT0iMjgxIiByPSIzLjQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMzUiLz48Y2lyY2xlIGN4PSI2NzEiIGN5PSIzMzIiIHI9IjYuNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4zOCIvPjxjaXJjbGUgY3g9IjExMDEiIGN5PSI4MCIgcj0iMy4xIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjM3Ii8+PGNpcmNsZSBjeD0iNTM1IiBjeT0iMjQiIHI9IjQuMSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC40MiIvPjxjaXJjbGUgY3g9IjY4NyIgY3k9IjUxIiByPSI1LjIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNjUiLz48Y2lyY2xlIGN4PSIxMTc3IiBjeT0iMjU2IiByPSI3LjEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNTEiLz48Y2lyY2xlIGN4PSIxNjgiIGN5PSIxNCIgcj0iMy4xIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjY2Ii8+PGNpcmNsZSBjeD0iODQxIiBjeT0iMzc1IiByPSIzLjEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNTQiLz48Y2lyY2xlIGN4PSI1NzkiIGN5PSIyODUiIHI9IjQuOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC43MCIvPjxjaXJjbGUgY3g9IjkwIiBjeT0iMjEzIiByPSI3LjQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNjYiLz48Y2lyY2xlIGN4PSI4ODUiIGN5PSIyNzQiIHI9IjcuOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC42NiIvPjxjaXJjbGUgY3g9IjQyMiIgY3k9IjI2NyIgcj0iOC40IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjY0Ii8+PGNpcmNsZSBjeD0iNTAxIiBjeT0iMzA4IiByPSI4LjIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNTEiLz48Y2lyY2xlIGN4PSI3NTAiIGN5PSIxNDkiIHI9IjYuNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC41MiIvPjxwYXRoIGQ9Ik0wIDYyIFEzMDAgMTE4IDYwMCA3NCBROTAwIDMwIDEyMDAgODYiIHN0cm9rZT0iI0U4NjA4RiIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTS0yMCA2MiBMMjAgNjIgTDAgMTA4IFoiIGZpbGw9IiNDMjE4NUIiIG9wYWNpdHk9IjAuOSIvPjxwYXRoIGQ9Ik03MiA3NSBMMTEyIDc1IEw5MiAxMjEgWiIgZmlsbD0iI0ZGQjMwMCIgb3BhY2l0eT0iMC45Ii8+PHBhdGggZD0iTTE2NSA4OCBMMjA1IDg4IEwxODUgMTM0IFoiIGZpbGw9IiNCMkRGREIiIG9wYWNpdHk9IjAuOSIvPjxwYXRoIGQ9Ik0yNTcgOTggTDI5NyA5OCBMMjc3IDE0NCBaIiBmaWxsPSIjRjA2MjkyIiBvcGFjaXR5PSIwLjkiLz48cGF0aCBkPSJNMzQ5IDEwNyBMMzg5IDEwNyBMMzY5IDE1MyBaIiBmaWxsPSIjN0NCMzQyIiBvcGFjaXR5PSIwLjkiLz48cGF0aCBkPSJNNDQyIDExMyBMNDgyIDExMyBMNDYyIDE1OSBaIiBmaWxsPSIjQ0U5M0Q4IiBvcGFjaXR5PSIwLjkiLz48cGF0aCBkPSJNNTM0IDExNiBMNTc0IDExNiBMNTU0IDE2MiBaIiBmaWxsPSIjQzIxODVCIiBvcGFjaXR5PSIwLjkiLz48cGF0aCBkPSJNNjI2IDExNiBMNjY2IDExNiBMNjQ2IDE2MiBaIiBmaWxsPSIjRkZCMzAwIiBvcGFjaXR5PSIwLjkiLz48cGF0aCBkPSJNNzE4IDExMyBMNzU4IDExMyBMNzM4IDE1OSBaIiBmaWxsPSIjQjJERkRCIiBvcGFjaXR5PSIwLjkiLz48cGF0aCBkPSJNODExIDEwNyBMODUxIDEwNyBMODMxIDE1MyBaIiBmaWxsPSIjRjA2MjkyIiBvcGFjaXR5PSIwLjkiLz48cGF0aCBkPSJNOTAzIDk4IEw5NDMgOTggTDkyMyAxNDQgWiIgZmlsbD0iIzdDQjM0MiIgb3BhY2l0eT0iMC45Ii8+PHBhdGggZD0iTTk5NSA4OCBMMTAzNSA4OCBMMTAxNSAxMzQgWiIgZmlsbD0iI0NFOTNEOCIgb3BhY2l0eT0iMC45Ii8+PHBhdGggZD0iTTEwODggNzUgTDExMjggNzUgTDExMDggMTIxIFoiIGZpbGw9IiNDMjE4NUIiIG9wYWNpdHk9IjAuOSIvPjxwYXRoIGQ9Ik0xMTgwIDYyIEwxMjIwIDYyIEwxMjAwIDEwOCBaIiBmaWxsPSIjRkZCMzAwIiBvcGFjaXR5PSIwLjkiLz48cmVjdCB4PSIwIiB5PSI0NTAiIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjcwIiBmaWxsPSIjRUJEOUM2Ii8+PHJlY3QgeD0iMCIgeT0iNDUwIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxMiIgZmlsbD0iI0RDQzVBQyIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwMCA0NTApIHNjYWxlKDEuMDUpIHRyYW5zbGF0ZSgtMjAwIC0zMTgpIj48ZWxsaXBzZSBjeD0iMjAwIiBjeT0iMzAyIiByeD0iMTMwIiByeT0iMTQiIGZpbGw9IiM2RDRDNDEiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik0xNzAgMjk4IEwxODAgMjc0IEgyMjAgTDIzMCAyOTggWiIgZmlsbD0iI0U0RDVDNyIvPjxlbGxpcHNlIGN4PSIyMDAiIGN5PSIzMDAiIHJ4PSI2MiIgcnk9IjkiIGZpbGw9IiNEOUM3QjYiLz48ZWxsaXBzZSBjeD0iMjAwIiBjeT0iMjcyIiByeD0iMTMyIiByeT0iMTUiIGZpbGw9IiNGM0U3REIiLz48ZWxsaXBzZSBjeD0iMjAwIiBjeT0iMjY4IiByeD0iMTMyIiByeT0iMTUiIGZpbGw9IiNGQkYzRUEiLz48cmVjdCB4PSI4NCIgeT0iMTc4IiB3aWR0aD0iMjMyIiBoZWlnaHQ9IjkwIiByeD0iNiIgZmlsbD0iIzhENjI0OCIvPjxyZWN0IHg9Ijg0IiB5PSIyMjAiIHdpZHRoPSIyMzIiIGhlaWdodD0iMTciIGZpbGw9IiM0RTM0MkUiLz48cmVjdCB4PSI4NCIgeT0iMTc4IiB3aWR0aD0iMjMyIiBoZWlnaHQ9IjkwIiByeD0iNiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wNSIvPjxyZWN0IHg9Ijg0IiB5PSIxNzgiIHdpZHRoPSIyMzIiIGhlaWdodD0iOTAiIHJ4PSI2IiBmaWxsPSJub25lIiBzdHJva2U9IiM2RDRDNDEiIHN0cm9rZS1vcGFjaXR5PSIwLjE4IiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNODQgMTc0IFE4NCAxNjIgMTAwIDE2MiBIMzAwIFEzMTYgMTYyIDMxNiAxNzQgVjE5MiBxIC0xNi42IDE3IC0zMy4xIDAgcSAtMTYuNiAxNyAtMzMuMSAwIHEgLTE2LjYgMTcgLTMzLjEgMCBxIC0xNi42IDE3IC0zMy4xIDAgcSAtMTYuNiAxNyAtMzMuMSAwIHEgLTE2LjYgMTcgLTMzLjEgMCBxIC0xNi42IDE3IC0zMy4xIDAgIFoiIGZpbGw9IiM1RDQwMzciLz48cmVjdCB4PSIxMjIiIHk9IjEwOCIgd2lkdGg9IjE1NiIgaGVpZ2h0PSI1NCIgcng9IjYiIGZpbGw9IiM4RDYyNDgiLz48cmVjdCB4PSIxMjIiIHk9IjEzNCIgd2lkdGg9IjE1NiIgaGVpZ2h0PSIxNCIgZmlsbD0iIzRFMzQyRSIvPjxyZWN0IHg9IjEyMiIgeT0iMTA4IiB3aWR0aD0iMTU2IiBoZWlnaHQ9IjU0IiByeD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ0QzQxIiBzdHJva2Utb3BhY2l0eT0iMC4xOCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTTEyMiAxMDUgUTEyMiA5NCAxMzYgOTQgSDI2NCBRMjc4IDk0IDI3OCAxMDUgVjEyMCBxIC0xNS42IDE0IC0zMS4yIDAgcSAtMTUuNiAxNCAtMzEuMiAwIHEgLTE1LjYgMTQgLTMxLjIgMCBxIC0xNS42IDE0IC0zMS4yIDAgcSAtMTUuNiAxNCAtMzEuMiAwICBaIiBmaWxsPSIjNUQ0MDM3Ii8+PHJlY3QgeD0iMTY4IiB5PSI2OCIgd2lkdGg9IjgiIGhlaWdodD0iMzAiIHJ4PSIzIiBmaWxsPSIjRTUzOTM1Ii8+PHJlY3QgeD0iMTY4IiB5PSI2OCIgd2lkdGg9IjgiIGhlaWdodD0iMzAiIHJ4PSIzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjI1Ii8+PHBhdGggZD0iTTE3MiA2MiBxNyA0IDAgMTIgcS03IC04IDAgLTEyIFoiIGZpbGw9IiNGRkIzMDAiLz48cmVjdCB4PSIxOTYiIHk9IjY4IiB3aWR0aD0iOCIgaGVpZ2h0PSIzMCIgcng9IjMiIGZpbGw9IiNFNTM5MzUiLz48cmVjdCB4PSIxOTYiIHk9IjY4IiB3aWR0aD0iOCIgaGVpZ2h0PSIzMCIgcng9IjMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMjUiLz48cGF0aCBkPSJNMjAwIDYyIHE3IDQgMCAxMiBxLTcgLTggMCAtMTIgWiIgZmlsbD0iI0ZGQjMwMCIvPjxyZWN0IHg9IjIyNCIgeT0iNjgiIHdpZHRoPSI4IiBoZWlnaHQ9IjMwIiByeD0iMyIgZmlsbD0iI0U1MzkzNSIvPjxyZWN0IHg9IjIyNCIgeT0iNjgiIHdpZHRoPSI4IiBoZWlnaHQ9IjMwIiByeD0iMyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4yNSIvPjxwYXRoIGQ9Ik0yMjggNjIgcTcgNCAwIDEyIHEtNyAtOCAwIC0xMiBaIiBmaWxsPSIjRkZCMzAwIi8+PGNpcmNsZSBjeD0iMTA0IiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMTU2IiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMTgyIiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMjA4IiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMjM0IiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMjYwIiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMjg2IiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMzEyIiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI2OCA0NTApIHNjYWxlKDAuNzIpIHRyYW5zbGF0ZSgtMTUwIC0zMDgpIj48ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMzAwIiByeD0iODgiIHJ5PSIxMiIgZmlsbD0iIzZENEM0MSIgb3BhY2l0eT0iMC4xIi8+PGNsaXBQYXRoIGlkPSJjcFBhcGVsIj48cGF0aCBkPSJNNzggMTk2IEgyMjIgTDIwNiAyOTIgUTIwNCAzMDAgMTk2IDMwMCBIMTA0IFE5NiAzMDAgOTQgMjkyIFoiLz48L2NsaXBQYXRoPjxwYXRoIGQ9Ik03OCAxOTYgSDIyMiBMMjA2IDI5MiBRMjA0IDMwMCAxOTYgMzAwIEgxMDQgUTk2IDMwMCA5NCAyOTIgWiIgZmlsbD0iI0Y0OEZCMSIvPjxnIGNsaXAtcGF0aD0idXJsKCNjcFBhcGVsKSI+PHJlY3QgeD0iODAiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iOTgiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMTE2IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjEzNCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIxNTIiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMTcwIiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjE4OCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIyMDYiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMjI0IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjwvZz48cGF0aCBkPSJNNzggMTk2IEgyMjIgTDIwNiAyOTIgUTIwNCAzMDAgMTk2IDMwMCBIMTA0IFE5NiAzMDAgOTQgMjkyIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZENEM0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMiIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iNzQiIHk9IjE4NiIgd2lkdGg9IjE1MiIgaGVpZ2h0PSIxNiIgcng9IjgiIGZpbGw9IiNGNDhGQjEiLz48cmVjdCB4PSI3NCIgeT0iMTg2IiB3aWR0aD0iMTUyIiBoZWlnaHQ9IjE2IiByeD0iOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xOCIvPjxwYXRoIGQ9Ik04NCAxOTQgcS02IC0zNCAyNiAtNDQgcS00IC0zMiAzMiAtMzYgcTYgLTI2IDM0IC0yMCBxMzAgNiAyNiAzNCBxMjYgOCAyMCAzNCBxLTIgMjIgLTI2IDMyIFoiIGZpbGw9IiNGRkY2RTYiLz48cGF0aCBkPSJNOTYgMTkwIHEtMiAtMjYgMjQgLTM0IiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjQ1IiBzdHJva2Utd2lkdGg9IjciIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xMzIgMTIyIHExMCAtMTQgMzAgLTEwIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjQiIHN0cm9rZS13aWR0aD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTg0IDE5NCBxLTYgLTM0IDI2IC00NCBxLTQgLTMyIDMyIC0zNiBxNiAtMjYgMzQgLTIwIHEzMCA2IDI2IDM0IHEyNiA4IDIwIDM0IHEtMiAyMiAtMjYgMzIgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ0QzQxIiBzdHJva2Utb3BhY2l0eT0iMC4xNCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iOTgiIHk9IjE3My41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0MyMTg1QiIgdHJhbnNmb3JtPSJyb3RhdGUoMCAxMDQgMTc2KSIvPjxyZWN0IHg9IjEyMiIgeT0iMTU3LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjQjJERkRCIiB0cmFuc2Zvcm09InJvdGF0ZSg0NyAxMjggMTYwKSIvPjxyZWN0IHg9IjE0NiIgeT0iMTc1LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRkZCMzAwIiB0cmFuc2Zvcm09InJvdGF0ZSg5NCAxNTIgMTc4KSIvPjxyZWN0IHg9IjE3MCIgeT0iMTUzLjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjQzIxODVCIiB0cmFuc2Zvcm09InJvdGF0ZSgxNDEgMTc2IDE1NikiLz48cmVjdCB4PSIxOTAiIHk9IjE2OS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0IyREZEQiIgdHJhbnNmb3JtPSJyb3RhdGUoOCAxOTYgMTcyKSIvPjxyZWN0IHg9IjEzNCIgeT0iMTI5LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRkZCMzAwIiB0cmFuc2Zvcm09InJvdGF0ZSg1NSAxNDAgMTMyKSIvPjxyZWN0IHg9IjE2MiIgeT0iMTE5LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjQzIxODVCIiB0cmFuc2Zvcm09InJvdGF0ZSgxMDIgMTY4IDEyMikiLz48cmVjdCB4PSIxMDgiIHk9IjE0NS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0IyREZEQiIgdHJhbnNmb3JtPSJyb3RhdGUoMTQ5IDExNCAxNDgpIi8+PHJlY3QgeD0iMTgwIiB5PSIxMzcuNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNGRkIzMDAiIHRyYW5zZm9ybT0icm90YXRlKDE2IDE4NiAxNDApIi8+PHBhdGggZD0iTTE1MCA2MiBxNiAtMTQgMTggLTE4IiBzdHJva2U9IiM3Q0IzNDIiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iNjgiIHI9IjE1IiBmaWxsPSIjRTUzOTM1Ii8+PGNpcmNsZSBjeD0iMTQ0IiBjeT0iNjMiIHI9IjUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNSIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NDAgNDUwKSBzY2FsZSgwLjcyKSB0cmFuc2xhdGUoLTE1MCAtMzA4KSI+PGVsbGlwc2UgY3g9IjE1MCIgY3k9IjMwMCIgcng9Ijg4IiByeT0iMTIiIGZpbGw9IiM2RDRDNDEiIG9wYWNpdHk9IjAuMSIvPjxjbGlwUGF0aCBpZD0iY3BQYXBlbCI+PHBhdGggZD0iTTc4IDE5NiBIMjIyIEwyMDYgMjkyIFEyMDQgMzAwIDE5NiAzMDAgSDEwNCBROTYgMzAwIDk0IDI5MiBaIi8+PC9jbGlwUGF0aD48cGF0aCBkPSJNNzggMTk2IEgyMjIgTDIwNiAyOTIgUTIwNCAzMDAgMTk2IDMwMCBIMTA0IFE5NiAzMDAgOTQgMjkyIFoiIGZpbGw9IiNBMTg4N0YiLz48ZyBjbGlwLXBhdGg9InVybCgjY3BQYXBlbCkiPjxyZWN0IHg9IjgwIiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9Ijk4IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjExNiIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIxMzQiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMTUyIiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjE3MCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIxODgiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMjA2IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjIyNCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48L2c+PHBhdGggZD0iTTc4IDE5NiBIMjIyIEwyMDYgMjkyIFEyMDQgMzAwIDE5NiAzMDAgSDEwNCBROTYgMzAwIDk0IDI5MiBaIiBmaWxsPSJub25lIiBzdHJva2U9IiM2RDRDNDEiIHN0cm9rZS1vcGFjaXR5PSIwLjIiIHN0cm9rZS13aWR0aD0iMiIvPjxyZWN0IHg9Ijc0IiB5PSIxODYiIHdpZHRoPSIxNTIiIGhlaWdodD0iMTYiIHJ4PSI4IiBmaWxsPSIjQTE4ODdGIi8+PHJlY3QgeD0iNzQiIHk9IjE4NiIgd2lkdGg9IjE1MiIgaGVpZ2h0PSIxNiIgcng9IjgiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTgiLz48cGF0aCBkPSJNODQgMTk0IHEtNiAtMzQgMjYgLTQ0IHEtNCAtMzIgMzIgLTM2IHE2IC0yNiAzNCAtMjAgcTMwIDYgMjYgMzQgcTI2IDggMjAgMzQgcS0yIDIyIC0yNiAzMiBaIiBmaWxsPSIjNkQ0QzQxIi8+PHBhdGggZD0iTTk2IDE5MCBxLTIgLTI2IDI0IC0zNCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iMC40NSIgc3Ryb2tlLXdpZHRoPSI3IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMTMyIDEyMiBxMTAgLTE0IDMwIC0xMCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iMC40IiBzdHJva2Utd2lkdGg9IjYiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik04NCAxOTQgcS02IC0zNCAyNiAtNDQgcS00IC0zMiAzMiAtMzYgcTYgLTI2IDM0IC0yMCBxMzAgNiAyNiAzNCBxMjYgOCAyMCAzNCBxLTIgMjIgLTI2IDMyIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZENEM0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMTQiIHN0cm9rZS13aWR0aD0iMiIvPjxyZWN0IHg9Ijk4IiB5PSIxNzMuNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNGRkYzRTAiIHRyYW5zZm9ybT0icm90YXRlKDAgMTA0IDE3NikiLz48cmVjdCB4PSIxMjIiIHk9IjE1Ny41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0Y4QkJEMCIgdHJhbnNmb3JtPSJyb3RhdGUoNDcgMTI4IDE2MCkiLz48cmVjdCB4PSIxNDYiIHk9IjE3NS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0ZGQjMwMCIgdHJhbnNmb3JtPSJyb3RhdGUoOTQgMTUyIDE3OCkiLz48cmVjdCB4PSIxNzAiIHk9IjE1My41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0ZGRjNFMCIgdHJhbnNmb3JtPSJyb3RhdGUoMTQxIDE3NiAxNTYpIi8+PHJlY3QgeD0iMTkwIiB5PSIxNjkuNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNGOEJCRDAiIHRyYW5zZm9ybT0icm90YXRlKDggMTk2IDE3MikiLz48cmVjdCB4PSIxMzQiIHk9IjEyOS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0ZGQjMwMCIgdHJhbnNmb3JtPSJyb3RhdGUoNTUgMTQwIDEzMikiLz48cmVjdCB4PSIxNjIiIHk9IjExOS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0ZGRjNFMCIgdHJhbnNmb3JtPSJyb3RhdGUoMTAyIDE2OCAxMjIpIi8+PHJlY3QgeD0iMTA4IiB5PSIxNDUuNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNGOEJCRDAiIHRyYW5zZm9ybT0icm90YXRlKDE0OSAxMTQgMTQ4KSIvPjxyZWN0IHg9IjE4MCIgeT0iMTM3LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRkZCMzAwIiB0cmFuc2Zvcm09InJvdGF0ZSgxNiAxODYgMTQwKSIvPjxwYXRoIGQ9Ik0xNTAgNjIgcTYgLTE0IDE4IC0xOCIgc3Ryb2tlPSIjN0NCMzQyIiBzdHJva2Utd2lkdGg9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjY4IiByPSIxNSIgZmlsbD0iI0U1MzkzNSIvPjxjaXJjbGUgY3g9IjE0NCIgY3k9IjYzIiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjUiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTMyIDIxMCkgc2NhbGUoMS41KSIgb3BhY2l0eT0iMC41NSI+PHBhdGggZD0iTTAgNiBDLTE0IC04IC0yMiAtMTggLTEyIC0yNiBDLTUgLTMxIDAgLTI1IDAgLTIxIEMwIC0yNSA1IC0zMSAxMiAtMjYgQzIyIC0xOCAxNCAtOCAwIDYgWiIgZmlsbD0iI0MyMTg1QiIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDY0IDE5Nikgc2NhbGUoMS44KSIgb3BhY2l0eT0iMC41Ij48cGF0aCBkPSJNMCA2IEMtMTQgLTggLTIyIC0xOCAtMTIgLTI2IEMtNSAtMzEgMCAtMjUgMCAtMjEgQzAgLTI1IDUgLTMxIDEyIC0yNiBDMjIgLTE4IDE0IC04IDAgNiBaIiBmaWxsPSIjQzIxODVCIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM5OCAxNjgpIHNjYWxlKDEuMSkiIG9wYWNpdHk9IjAuNDUiPjxwYXRoIGQ9Ik0wIDYgQy0xNCAtOCAtMjIgLTE4IC0xMiAtMjYgQy01IC0zMSAwIC0yNSAwIC0yMSBDMCAtMjUgNSAtMzEgMTIgLTI2IEMyMiAtMTggMTQgLTggMCA2IFoiIGZpbGw9IiNDMjE4NUIiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODEyIDE3OCkgc2NhbGUoMS4yKSIgb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMCA2IEMtMTQgLTggLTIyIC0xOCAtMTIgLTI2IEMtNSAtMzEgMCAtMjUgMCAtMjEgQzAgLTI1IDUgLTMxIDEyIC0yNiBDMjIgLTE4IDE0IC04IDAgNiBaIiBmaWxsPSIjQzIxODVCIi8+PC9nPgo8L3N2Zz4K" alt="Ilustración de una mesa con un pastel de chocolate y dos cupcakes decorados">
     </section>
 
     <!-- ===================== PROMOCIONES ===================== -->
@@ -102,7 +653,7 @@
 
         <div class="rejilla">
           <article class="tarjeta">
-            <img src="img/pastel-chocolate.svg" alt="Ilustración de un pastel de chocolate de dos pisos">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzQwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM0MCIgcm9sZT0iaW1nIj4KCjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE2OCIgcj0iMTUyIiBmaWxsPSIjRkNFNEVDIi8+PGVsbGlwc2UgY3g9IjIwMCIgY3k9IjMwMiIgcng9IjEzMCIgcnk9IjE0IiBmaWxsPSIjNkQ0QzQxIiBvcGFjaXR5PSIwLjEiLz48cGF0aCBkPSJNMTcwIDI5OCBMMTgwIDI3NCBIMjIwIEwyMzAgMjk4IFoiIGZpbGw9IiNFNEQ1QzciLz48ZWxsaXBzZSBjeD0iMjAwIiBjeT0iMzAwIiByeD0iNjIiIHJ5PSI5IiBmaWxsPSIjRDlDN0I2Ii8+PGVsbGlwc2UgY3g9IjIwMCIgY3k9IjI3MiIgcng9IjEzMiIgcnk9IjE1IiBmaWxsPSIjRjNFN0RCIi8+PGVsbGlwc2UgY3g9IjIwMCIgY3k9IjI2OCIgcng9IjEzMiIgcnk9IjE1IiBmaWxsPSIjRkJGM0VBIi8+PHJlY3QgeD0iODQiIHk9IjE3OCIgd2lkdGg9IjIzMiIgaGVpZ2h0PSI5MCIgcng9IjYiIGZpbGw9IiM4RDYyNDgiLz48cmVjdCB4PSI4NCIgeT0iMjIwIiB3aWR0aD0iMjMyIiBoZWlnaHQ9IjE3IiBmaWxsPSIjNEUzNDJFIi8+PHJlY3QgeD0iODQiIHk9IjE3OCIgd2lkdGg9IjIzMiIgaGVpZ2h0PSI5MCIgcng9IjYiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDUiLz48cmVjdCB4PSI4NCIgeT0iMTc4IiB3aWR0aD0iMjMyIiBoZWlnaHQ9IjkwIiByeD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ0QzQxIiBzdHJva2Utb3BhY2l0eT0iMC4xOCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTTg0IDE3NCBRODQgMTYyIDEwMCAxNjIgSDMwMCBRMzE2IDE2MiAzMTYgMTc0IFYxOTIgcSAtMTYuNiAxNyAtMzMuMSAwIHEgLTE2LjYgMTcgLTMzLjEgMCBxIC0xNi42IDE3IC0zMy4xIDAgcSAtMTYuNiAxNyAtMzMuMSAwIHEgLTE2LjYgMTcgLTMzLjEgMCBxIC0xNi42IDE3IC0zMy4xIDAgcSAtMTYuNiAxNyAtMzMuMSAwICBaIiBmaWxsPSIjNUQ0MDM3Ii8+PHJlY3QgeD0iMTIyIiB5PSIxMDgiIHdpZHRoPSIxNTYiIGhlaWdodD0iNTQiIHJ4PSI2IiBmaWxsPSIjOEQ2MjQ4Ii8+PHJlY3QgeD0iMTIyIiB5PSIxMzQiIHdpZHRoPSIxNTYiIGhlaWdodD0iMTQiIGZpbGw9IiM0RTM0MkUiLz48cmVjdCB4PSIxMjIiIHk9IjEwOCIgd2lkdGg9IjE1NiIgaGVpZ2h0PSI1NCIgcng9IjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZENEM0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMTgiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0xMjIgMTA1IFExMjIgOTQgMTM2IDk0IEgyNjQgUTI3OCA5NCAyNzggMTA1IFYxMjAgcSAtMTUuNiAxNCAtMzEuMiAwIHEgLTE1LjYgMTQgLTMxLjIgMCBxIC0xNS42IDE0IC0zMS4yIDAgcSAtMTUuNiAxNCAtMzEuMiAwIHEgLTE1LjYgMTQgLTMxLjIgMCAgWiIgZmlsbD0iIzVENDAzNyIvPjxwYXRoIGQ9Ik0yMDAgOTIgcTYgLTE0IDE2IC0yMCIgc3Ryb2tlPSIjN0NCMzQyIiBzdHJva2Utd2lkdGg9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjIwMCIgY3k9Ijk3IiByPSIxMyIgZmlsbD0iI0U1MzkzNSIvPjxjaXJjbGUgY3g9IjE5NSIgY3k9IjkzIiByPSI0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjU1Ii8+PGNpcmNsZSBjeD0iMTA0IiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMTU2IiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMTgyIiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMjA4IiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMjM0IiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMjYwIiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMjg2IiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+PGNpcmNsZSBjeD0iMzEyIiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjc1Ii8+Cjwvc3ZnPgo=" alt="Ilustración de un pastel de chocolate de dos pisos">
             <div class="tarjeta-cuerpo">
               <h3>Pastel de chocolate</h3>
               <p>Bizcocho húmedo de cacao con relleno de ganache y cobertura de chocolate semiamargo.</p>
@@ -111,7 +662,7 @@
           </article>
 
           <article class="tarjeta">
-            <img src="img/cupcake-vainilla.svg" alt="Ilustración de un cupcake de vainilla con chispas de colores">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzQwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjM0MCIgcm9sZT0iaW1nIj4KCjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE4MCIgcj0iMTQwIiBmaWxsPSIjRkZGMUY1Ii8+PGVsbGlwc2UgY3g9IjE1MCIgY3k9IjMwMCIgcng9Ijg4IiByeT0iMTIiIGZpbGw9IiM2RDRDNDEiIG9wYWNpdHk9IjAuMSIvPjxjbGlwUGF0aCBpZD0iY3BQYXBlbCI+PHBhdGggZD0iTTc4IDE5NiBIMjIyIEwyMDYgMjkyIFEyMDQgMzAwIDE5NiAzMDAgSDEwNCBROTYgMzAwIDk0IDI5MiBaIi8+PC9jbGlwUGF0aD48cGF0aCBkPSJNNzggMTk2IEgyMjIgTDIwNiAyOTIgUTIwNCAzMDAgMTk2IDMwMCBIMTA0IFE5NiAzMDAgOTQgMjkyIFoiIGZpbGw9IiNGNDhGQjEiLz48ZyBjbGlwLXBhdGg9InVybCgjY3BQYXBlbCkiPjxyZWN0IHg9IjgwIiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9Ijk4IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjExNiIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIxMzQiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMTUyIiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjE3MCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48cmVjdCB4PSIxODgiIHk9IjE5MCIgd2lkdGg9IjgiIGhlaWdodD0iMTIwIiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjA5Ii8+PHJlY3QgeD0iMjA2IiB5PSIxOTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wOSIvPjxyZWN0IHg9IjIyNCIgeT0iMTkwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMDkiLz48L2c+PHBhdGggZD0iTTc4IDE5NiBIMjIyIEwyMDYgMjkyIFEyMDQgMzAwIDE5NiAzMDAgSDEwNCBROTYgMzAwIDk0IDI5MiBaIiBmaWxsPSJub25lIiBzdHJva2U9IiM2RDRDNDEiIHN0cm9rZS1vcGFjaXR5PSIwLjIiIHN0cm9rZS13aWR0aD0iMiIvPjxyZWN0IHg9Ijc0IiB5PSIxODYiIHdpZHRoPSIxNTIiIGhlaWdodD0iMTYiIHJ4PSI4IiBmaWxsPSIjRjQ4RkIxIi8+PHJlY3QgeD0iNzQiIHk9IjE4NiIgd2lkdGg9IjE1MiIgaGVpZ2h0PSIxNiIgcng9IjgiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTgiLz48cGF0aCBkPSJNODQgMTk0IHEtNiAtMzQgMjYgLTQ0IHEtNCAtMzIgMzIgLTM2IHE2IC0yNiAzNCAtMjAgcTMwIDYgMjYgMzQgcTI2IDggMjAgMzQgcS0yIDIyIC0yNiAzMiBaIiBmaWxsPSIjRkZGNkU2Ii8+PHBhdGggZD0iTTk2IDE5MCBxLTIgLTI2IDI0IC0zNCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iMC40NSIgc3Ryb2tlLXdpZHRoPSI3IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMTMyIDEyMiBxMTAgLTE0IDMwIC0xMCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iMC40IiBzdHJva2Utd2lkdGg9IjYiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik04NCAxOTQgcS02IC0zNCAyNiAtNDQgcS00IC0zMiAzMiAtMzYgcTYgLTI2IDM0IC0yMCBxMzAgNiAyNiAzNCBxMjYgOCAyMCAzNCBxLTIgMjIgLTI2IDMyIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZENEM0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMTQiIHN0cm9rZS13aWR0aD0iMiIvPjxyZWN0IHg9Ijk4IiB5PSIxNzMuNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNDMjE4NUIiIHRyYW5zZm9ybT0icm90YXRlKDAgMTA0IDE3NikiLz48cmVjdCB4PSIxMjIiIHk9IjE1Ny41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0IyREZEQiIgdHJhbnNmb3JtPSJyb3RhdGUoNDcgMTI4IDE2MCkiLz48cmVjdCB4PSIxNDYiIHk9IjE3NS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0ZGQjMwMCIgdHJhbnNmb3JtPSJyb3RhdGUoOTQgMTUyIDE3OCkiLz48cmVjdCB4PSIxNzAiIHk9IjE1My41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0MyMTg1QiIgdHJhbnNmb3JtPSJyb3RhdGUoMTQxIDE3NiAxNTYpIi8+PHJlY3QgeD0iMTkwIiB5PSIxNjkuNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNCMkRGREIiIHRyYW5zZm9ybT0icm90YXRlKDggMTk2IDE3MikiLz48cmVjdCB4PSIxMzQiIHk9IjEyOS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0ZGQjMwMCIgdHJhbnNmb3JtPSJyb3RhdGUoNTUgMTQwIDEzMikiLz48cmVjdCB4PSIxNjIiIHk9IjExOS41IiB3aWR0aD0iMTIiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI0MyMTg1QiIgdHJhbnNmb3JtPSJyb3RhdGUoMTAyIDE2OCAxMjIpIi8+PHJlY3QgeD0iMTA4IiB5PSIxNDUuNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNCMkRGREIiIHRyYW5zZm9ybT0icm90YXRlKDE0OSAxMTQgMTQ4KSIvPjxyZWN0IHg9IjE4MCIgeT0iMTM3LjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjRkZCMzAwIiB0cmFuc2Zvcm09InJvdGF0ZSgxNiAxODYgMTQwKSIvPjxwYXRoIGQ9Ik0xNTAgNjIgcTYgLTE0IDE4IC0xOCIgc3Ryb2tlPSIjN0NCMzQyIiBzdHJva2Utd2lkdGg9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjY4IiByPSIxNSIgZmlsbD0iI0U1MzkzNSIvPjxjaXJjbGUgY3g9IjE0NCIgY3k9IjYzIiByPSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjUiLz4KPC9zdmc+Cg==" alt="Ilustración de un cupcake de vainilla con chispas de colores">
             <div class="tarjeta-cuerpo">
               <h3>Cupcakes de vainilla</h3>
               <p>Suaves, esponjosos y decorados con buttercream y chispas de colores. Ideales para compartir.</p>
@@ -120,7 +671,7 @@
           </article>
 
           <article class="tarjeta">
-            <img src="img/postre-cheesecake.svg" alt="Ilustración de una rebanada de cheesecake con fresa">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzQwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM0MCIgcm9sZT0iaW1nIj4KCjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE3MCIgcj0iMTUwIiBmaWxsPSIjRkZGOEVEIi8+PGVsbGlwc2UgY3g9IjIwMCIgY3k9IjI2OCIgcng9IjEyMCIgcnk9IjE0IiBmaWxsPSIjNkQ0QzQxIiBvcGFjaXR5PSIwLjEiLz48ZWxsaXBzZSBjeD0iMjAwIiBjeT0iMjU4IiByeD0iMTMyIiByeT0iMTgiIGZpbGw9IiNGM0U3REIiLz48ZWxsaXBzZSBjeD0iMjAwIiBjeT0iMjUzIiByeD0iMTMyIiByeT0iMTgiIGZpbGw9IiNGQkYzRUEiLz48cGF0aCBkPSJNMTEwIDI0NiBMMTUwIDExNiBMMjkwIDE5MCBaIiBmaWxsPSIjRkZGM0UwIi8+PHBhdGggZD0iTTExMCAyNDYgTDE1MCAxMTYgTDI5MCAxOTAgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkQ0QzQxIiBzdHJva2Utb3BhY2l0eT0iMC4xOCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTTExMCAyNDYgTDI5MCAxOTAgTDI5MiAyMTQgTDExMiAyNjggWiIgZmlsbD0iI0Q3QTg2RSIvPjxwYXRoIGQ9Ik0xMTAgMjQ2IEwxMTIgMjY4IEw5NiAyNTggTDEwOCAyMzYgWiIgZmlsbD0iI0M3OTI1NiIvPjxwYXRoIGQ9Ik0xNTAgMTE2IEwyOTAgMTkwIHEtMTYgMTYgLTQwIDYgcS0yMCAxNiAtNDQgLTIgcS0yMiAxNCAtNDQgLTQgcS0xNCA2IC0yMiAtNCBaIiBmaWxsPSIjRUY1MzUwIi8+PHBhdGggZD0iTTE3MCAxMzAgcTIwIDYgMzQgMjAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9IjAuMzUiIHN0cm9rZS13aWR0aD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE0IDE1MCkgc2NhbGUoMS41KSI+PHBhdGggZD0iTTAgLTYgcTEzIDAgMTMgMTAgcTAgMTIgLTEzIDE4IHEtMTMgLTYgLTEzIC0xOCBxMCAtMTAgMTMgLTEwIFoiIGZpbGw9IiNFNTM5MzUiLz48cGF0aCBkPSJNLTkgLTcgaDE4IGwtOSAtNyBaIiBmaWxsPSIjN0NCMzQyIi8+PC9nPgo8L3N2Zz4K" alt="Ilustración de una rebanada de cheesecake con fresa">
             <div class="tarjeta-cuerpo">
               <h3>Cheesecake de fresa</h3>
               <p>Base de galleta, crema suave de queso y una cobertura de fresas naturales hecha el mismo día.</p>
@@ -146,7 +697,7 @@
             <li>Atención directa por WhatsApp, sin intermediarios.</li>
           </ul>
         </div>
-        <img src="img/cocina.svg" alt="Ilustración de una cocina con tazón, batidor, rodillo y harina">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTYwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgcm9sZT0iaW1nIj4KCjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNTYwIiBmaWxsPSIjRkZGM0UwIi8+PGNpcmNsZSBjeD0iNDAwIiBjeT0iMjU1IiByPSIyMTUiIGZpbGw9IiNGRkY4RUQiLz48Y2lyY2xlIGN4PSI0MDAiIGN5PSIyNTUiIHI9IjIxNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjhCQkQwIiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtZGFzaGFycmF5PSI0IDE4IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cmVjdCB4PSI3MCIgeT0iNDE4IiB3aWR0aD0iNjYwIiBoZWlnaHQ9IjI2IiByeD0iMTMiIGZpbGw9IiNFNENEQjQiLz48cGF0aCBkPSJNMjUwIDMyMCBINDcwIFE0NjIgNDE4IDQwMCA0MTggSDMyMCBRMjU4IDQxOCAyNTAgMzIwIFoiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBkPSJNMjUwIDMyMCBINDcwIFE0NjIgNDE4IDQwMCA0MTggSDMyMCBRMjU4IDQxOCAyNTAgMzIwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZENEM0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMjUiIHN0cm9rZS13aWR0aD0iMyIvPjxyZWN0IHg9IjI0MCIgeT0iMzA2IiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjIwIiByeD0iMTAiIGZpbGw9IiNGNUY1RjUiIHN0cm9rZT0iIzZENEM0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMiIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTTI2MiAzMjAgSDQ1OCBxLTYgMjYgLTMwIDIyIHEtMjQgLTQgLTQwIDYgcS0yMiA4IC00NCAtNCBxLTIyIC0xMCAtNDAgMiBxLTI0IDYgLTQyIC0yNiBaIiBmaWxsPSIjRjVENkE4Ii8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQyIC02KSByb3RhdGUoLTIyIDQ3MCAzMDApIj48cmVjdCB4PSI0NjIiIHk9IjE4MCIgd2lkdGg9IjE2IiBoZWlnaHQ9Ijk2IiByeD0iOCIgZmlsbD0iIzZENEM0MSIvPjxwYXRoIGQ9Ik00NzAgMjcyIHEtMjYgMzQgMCA2MiIgc3Ryb2tlPSIjQjBCRUM1IiBzdHJva2Utd2lkdGg9IjUiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik00NzAgMjcyIHEtMTIgMzQgMCA2MiIgc3Ryb2tlPSIjQjBCRUM1IiBzdHJva2Utd2lkdGg9IjUiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik00NzAgMjcyIHEwIDM0IDAgNjIiIHN0cm9rZT0iI0IwQkVDNSIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNNDcwIDI3MiBxMTIgMzQgMCA2MiIgc3Ryb2tlPSIjQjBCRUM1IiBzdHJva2Utd2lkdGg9IjUiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik00NzAgMjcyIHEyNiAzNCAwIDYyIiBzdHJva2U9IiNCMEJFQzUiIHN0cm9rZS13aWR0aD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGVsbGlwc2UgY3g9IjQ3MCIgY3k9IjMzNiIgcng9IjEyIiByeT0iNiIgZmlsbD0iIzkwQTRBRSIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjAgMzcyKSByb3RhdGUoLTgpIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjM0IiByeD0iMTciIGZpbGw9IiNFQkM0OEMiLz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjM0IiByeD0iMTciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZENEM0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMjUiIHN0cm9rZS13aWR0aD0iMiIvPjxyZWN0IHg9Ii00NiIgeT0iMTAiIHdpZHRoPSI1MiIgaGVpZ2h0PSIxNCIgcng9IjciIGZpbGw9IiM2RDRDNDEiLz48cmVjdCB4PSIxNzQiIHk9IjEwIiB3aWR0aD0iNTIiIGhlaWdodD0iMTQiIHJ4PSI3IiBmaWxsPSIjNkQ0QzQxIi8+PC9nPjxwYXRoIGQ9Ik01NTYgMzAwIGgxMzIgcTE0IDAgMTQgMTYgdjkyIHEwIDE0IC0xNCAxNCBoLTEzMiBxLTE0IDAgLTE0IC0xNCB2LTkyIHEwIC0xNiAxNCAtMTYgWiIgZmlsbD0iI0ZGRkZGRiIgc3Ryb2tlPSIjNkQ0QzQxIiBzdHJva2Utb3BhY2l0eT0iMC4yNSIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTU1NiAzMDAgcTMwIC0yMiA2NiAtNiBxMzYgMTYgNjYgNiIgZmlsbD0iI0Y1RjVGNSIgc3Ryb2tlPSIjNkQ0QzQxIiBzdHJva2Utb3BhY2l0eT0iMC4yNSIgc3Ryb2tlLXdpZHRoPSIzIi8+PHJlY3QgeD0iNTYyIiB5PSIzNDIiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzQiIHJ4PSI4IiBmaWxsPSIjRjhCQkQwIi8+PHRleHQgeD0iNjIyIiB5PSIzNjYiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIyMiIgZmlsbD0iI0MyMTg1QiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SGFyaW5hPC90ZXh0PjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYxNCAxNTIpIHNjYWxlKDAuODIpIj48cGF0aCBkPSJNLTY0IDU2IHEtNDQgLTYgLTM4IC00NCBxNiAtMzQgNDAgLTI2IHE2IC0zMiA0NCAtMzIgcTM4IDAgNDQgMzIgcTM0IC04IDQwIDI2IHE2IDM4IC0zOCA0NCBaIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiM2RDRDNDEiIHN0cm9rZS1vcGFjaXR5PSIwLjM1IiBzdHJva2Utd2lkdGg9IjMuNSIvPjxwYXRoIGQ9Ik0tNjQgNTYgaDEyOCIgc3Ryb2tlPSIjNkQ0QzQxIiBzdHJva2Utb3BhY2l0eT0iMC4xOCIgc3Ryb2tlLXdpZHRoPSIzIi8+PHJlY3QgeD0iLTY0IiB5PSI1NiIgd2lkdGg9IjEyOCIgaGVpZ2h0PSIzNCIgcng9IjEwIiBmaWxsPSIjRjRGNEY0IiBzdHJva2U9IiM2RDRDNDEiIHN0cm9rZS1vcGFjaXR5PSIwLjM1IiBzdHJva2Utd2lkdGg9IjMuNSIvPjxwYXRoIGQ9Ik0tMzIgNjAgdjI2IiBzdHJva2U9IiM2RDRDNDEiIHN0cm9rZS1vcGFjaXR5PSIwLjE2IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMCA2MCB2MjYiIHN0cm9rZT0iIzZENEM0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMTYiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik0zMiA2MCB2MjYiIHN0cm9rZT0iIzZENEM0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMTYiIHN0cm9rZS13aWR0aD0iMyIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzYgMTU4KSBzY2FsZSgxLjcpIiBvcGFjaXR5PSIwLjYiPjxwYXRoIGQ9Ik0wIDYgQy0xNCAtOCAtMjIgLTE4IC0xMiAtMjYgQy01IC0zMSAwIC0yNSAwIC0yMSBDMCAtMjUgNSAtMzEgMTIgLTI2IEMyMiAtMTggMTQgLTggMCA2IFoiIGZpbGw9IiNDMjE4NUIiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUwIDI1MCkgc2NhbGUoMS4yKSIgb3BhY2l0eT0iMC42Ij48cGF0aCBkPSJNMCA2IEMtMTQgLTggLTIyIC0xOCAtMTIgLTI2IEMtNSAtMzEgMCAtMjUgMCAtMjEgQzAgLTI1IDUgLTMxIDEyIC0yNiBDMjIgLTE4IDE0IC04IDAgNiBaIiBmaWxsPSIjQzIxODVCIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcwMCA0ODYpIHNjYWxlKDEuMSkiIG9wYWNpdHk9IjAuNiI+PHBhdGggZD0iTTAgNiBDLTE0IC04IC0yMiAtMTggLTEyIC0yNiBDLTUgLTMxIDAgLTI1IDAgLTIxIEMwIC0yNSA1IC0zMSAxMiAtMjYgQzIyIC0xOCAxNCAtOCAwIDYgWiIgZmlsbD0iI0MyMTg1QiIvPjwvZz4KPC9zdmc+Cg==" alt="Ilustración de una cocina con tazón, batidor, rodillo y harina">
       </div>
     </section>
 
@@ -193,6 +744,34 @@
     <p class="pie-final">&copy; 2026 Dulce Hogar &middot; Sitio web elaborado como proyecto escolar de Diseño Web con HTML5.</p>
   </footer>
 
-  <script src="js/menu.js"></script>
+  <script>
+/* Menú responsivo: abre y cierra la navegación en pantallas pequeñas */
+document.addEventListener("DOMContentLoaded", function () {
+  var boton = document.querySelector(".boton-menu");
+  var menu = document.getElementById("menu-principal");
+
+  if (boton && menu) {
+    boton.addEventListener("click", function () {
+      var abierto = menu.classList.toggle("abierto");
+      boton.setAttribute("aria-expanded", abierto ? "true" : "false");
+    });
+  }
+
+  /* Mensaje de confirmación en los formularios (demostración escolar) */
+  var formularios = document.querySelectorAll("form[data-demo]");
+  formularios.forEach(function (form) {
+    form.addEventListener("submit", function (evento) {
+      evento.preventDefault();
+      var aviso = form.querySelector(".mensaje-enviado");
+      if (aviso) {
+        aviso.hidden = false;
+        aviso.focus();
+      }
+      form.reset();
+    });
+  });
+});
+
+  </script>
 </body>
 </html>
